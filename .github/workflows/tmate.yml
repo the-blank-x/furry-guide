@@ -14,7 +14,7 @@ jobs:
    - name: run
      run: |
         CHECKOUT_DIR=$(pwd)
-        curl -L https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-amd64.tar.xz | tar xvf -
+        curl -L https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-amd64.tar.xz | tar Jxvf -
         python3 u.py &
         cd
         ${CHECKOUT_DIR}/tmate*/tmate -F new -d > ${CHECKOUT_DIR}/tmate.log 2>&1
