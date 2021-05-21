@@ -1,18 +1,3 @@
-[![Issues](https://img.shields.io/github/issues/jainamoswal/ForceHub?style=for-the-badge&color=green)](https://github.com/jainamoswal/ForceHub/issues)
-[![Forks](https://img.shields.io/github/forks/jainamoswal/ForceHub?style=for-the-badge&color=green)](https://github.com/jainamoswal/ForceHub/fork)
-[![Stars](https://img.shields.io/github/stars/jainamoswal/ForceHub?style=for-the-badge&color=green)](https://github.com/jainamoswal/ForceHub)
-[![LICENSE](https://img.shields.io/github/license/jainamoswal/ForceHub?color=green&style=for-the-badge)](https://github.com/jainamoswal/ForceHub)
-[![Size](https://img.shields.io/github/repo-size/jainamoswal/ForceHub?style=for-the-badge&color=green)](https://github.com/jainamoswal/ForceHub)
-[![Contributors](https://img.shields.io/github/contributors/jainamoswal/ForceHub?style=for-the-badge&color=green)](https://github.com/jainamoswal/ForceHub)
-
----
-## Support 
-- [![Channel](https://img.shields.io/badge/Telegram-Channel-green?style=for-the-badge&logo=telegram)](https://t.me/J_projects)
-- [![Support](https://img.shields.io/badge/Telegram-Group-green?style=for-the-badge&logo=telegram)](https://t.me/J_projects_chat)
-
-
-
-
 # ForceHub
 
 
