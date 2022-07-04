@@ -24,10 +24,13 @@ jobs:
                   cache: gradle
 
             - name: Build APK
-              run: cd np && ./gradlew assembleDebug --stacktrace -DskipFormatKtlint || (cat app/build/reports/checkstyle/runCheckstyle.html && false)
+              run: |
+                cd np
+                ./gradlew assembleDebug --stacktrace -DskipFormatKtlint || (cat app/build/reports/checkstyle/runCheckstyle.html && false)
+                cp app/build/outputs/apk/debug/*.apk ../newpipe-sponsorblock.apk
 
             - name: Upload APK
               uses: actions/upload-artifact@v2
               with:
                   name: newpipe-sponsorblock.apk
-                  path: app/build/outputs/apk/debug/*.apk
+                  path: newpipe-sponsorblock.apk
