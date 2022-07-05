@@ -6,7 +6,7 @@ on:
             - newpipe-sponsorblock
 
 jobs:
-    build-newpipe-sponsorblock:
+    build:
         runs-on: ubuntu-latest
         steps:
             - name: Clone
