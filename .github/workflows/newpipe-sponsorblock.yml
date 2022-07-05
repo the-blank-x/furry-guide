@@ -6,7 +6,7 @@ on:
             - newpipe-sponsorblock
 
 jobs:
-    build-and-test-jvm:
+    build-newpipe-sponsorblock:
         runs-on: ubuntu-latest
         steps:
             - name: Clone
@@ -27,7 +27,7 @@ jobs:
               run: |
                 cd np
                 ./gradlew assembleDebug --stacktrace -DskipFormatKtlint || (cat app/build/reports/checkstyle/runCheckstyle.html && false)
-                cp app/build/outputs/apk/debug/*.apk ../newpipe-sponsorblock.apk
+                mv app/build/outputs/apk/debug/*.apk ../newpipe-sponsorblock.apk
 
             - name: Upload APK
               uses: actions/upload-artifact@v2
