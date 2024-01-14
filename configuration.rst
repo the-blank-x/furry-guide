@@ -27,6 +27,331 @@ Extractor-specific Options
 ==========================
 
 
+extractor.lolisafe.domain
+-------------------------
+Type
+    ``string``
+Default
+    ``null``
+Description
+    Specifies the domain used by a ``lolisafe`` extractor
+    regardless of input URL.
+
+    Setting this option to ``"auto"``
+    uses the same domain as a given input URL.
+
+
+extractor.luscious.gif
+----------------------
+Type
+    ``bool``
+Default
+    ``false``
+Description
+    Format in which to download animated images.
+
+    Use ``true`` to download animated images as gifs and ``false``
+    to download as mp4 videos.
+
+
+extractor.mangadex.api-server
+-----------------------------
+Type
+    ``string``
+Default
+    ``"https://api.mangadex.org"``
+Description
+    The server to use for API requests.
+
+
+extractor.mangadex.api-parameters
+---------------------------------
+Type
+    ``object`` (`name` -> `value`)
+Example
+    ``{"order[updatedAt]": "desc"}``
+Description
+    Additional query parameters to send when fetching manga chapters.
+
+    (See `/manga/{id}/feed <https://api.mangadex.org/docs/swagger.html#/Manga/get-manga-id-feed>`__
+    and `/user/follows/manga/feed <https://api.mangadex.org/docs/swagger.html#/Feed/get-user-follows-manga-feed>`__)
+
+
+extractor.mangadex.lang
+-----------------------
+Type
+    * ``string``
+    * ``list`` of ``strings``
+Example
+    * ``"en"``
+    * ``"fr,it"``
+    * ``["fr", "it"]``
+Description
+    `ISO 639-1 <https://en.wikipedia.org/wiki/ISO_639-1>`__ language codes
+    to filter chapters by.
+
+
+extractor.mangadex.ratings
+--------------------------
+Type
+    ``list`` of ``strings``
+Default
+    ``["safe", "suggestive", "erotica", "pornographic"]``
+Description
+    List of acceptable content ratings for returned chapters.
+
+
+extractor.mangapark.source
+--------------------------
+Type
+    * ``string``
+    * ``integer``
+Example
+    * ``"koala:en"``
+    * ``15150116``
+Description
+    Select chapter source and language for a manga.
+
+    | The general syntax is ``"<source name>:<ISO 639-1 language code>"``.
+    | Both are optional, meaning ``"koala"``, ``"koala:"``, ``":en"``,
+      or even just ``":"`` are possible as well.
+
+    Specifying the numeric ``ID`` of a source is also supported.
+
+
+extractor.[mastodon].access-token
+---------------------------------
+Type
+    ``string``
+Default
+    ``null``
+Description
+    The ``access-token`` value you get from `linking your account to
+    gallery-dl <OAuth_>`__.
+
+    Note: gallery-dl comes with built-in tokens for ``mastodon.social``,
+    ``pawoo`` and ``baraag``. For other instances, you need to obtain an
+    ``access-token`` in order to use usernames in place of numerical
+    user IDs.
+
+
+extractor.[mastodon].reblogs
+----------------------------
+Type
+    ``bool``
+Default
+    ``false``
+Description
+    Fetch media from reblogged posts.
+
+
+extractor.[mastodon].replies
+----------------------------
+Type
+    ``bool``
+Default
+    ``true``
+Description
+    Fetch media from replies to other posts.
+
+
+extractor.[mastodon].text-posts
+-------------------------------
+Type
+    ``bool``
+Default
+    ``false``
+Description
+    Also emit metadata for text-only posts without media content.
+
+
+extractor.[misskey].access-token
+--------------------------------
+Type
+    ``string``
+Description
+    Your access token, necessary to fetch favorited notes.
+
+
+extractor.[misskey].renotes
+---------------------------
+Type
+    ``bool``
+Default
+    ``false``
+Description
+    Fetch media from renoted notes.
+
+
+extractor.[misskey].replies
+---------------------------
+Type
+    ``bool``
+Default
+    ``true``
+Description
+    Fetch media from replies to other notes.
+
+
+extractor.[moebooru].pool.metadata
+----------------------------------
+Type
+    ``bool``
+Default
+    ``false``
+Description
+    Extract extended ``pool`` metadata.
+
+    Note: Not supported by all ``moebooru`` instances.
+
+
+extractor.newgrounds.flash
+--------------------------
+Type
+    ``bool``
+Default
+    ``true``
+Description
+    Download original Adobe Flash animations instead of pre-rendered videos.
+
+
+extractor.newgrounds.format
+---------------------------
+Type
+    ``string``
+Default
+    ``"original"``
+Example
+    ``"720p"``
+Description
+    Selects the preferred format for video downloads.
+
+    If the selected format is not available,
+    the next smaller one gets chosen.
+
+
+extractor.newgrounds.include
+----------------------------
+Type
+    * ``string``
+    * ``list`` of ``strings``
+Default
+    ``"art"``
+Example
+    * ``"movies,audio"``
+    * ``["movies", "audio"]``
+Description
+    A (comma-separated) list of subcategories to include
+    when processing a user profile.
+
+    Possible values are
+    ``"art"``, ``"audio"``, ``"games"``, ``"movies"``.
+
+    It is possible to use ``"all"`` instead of listing all values separately.
+
+
+extractor.nijie.include
+-----------------------
+Type
+    * ``string``
+    * ``list`` of ``strings``
+Default
+    ``"illustration,doujin"``
+Description
+    A (comma-separated) list of subcategories to include
+    when processing a user profile.
+
+    Possible values are
+    ``"illustration"``, ``"doujin"``, ``"favorite"``, ``"nuita"``.
+
+    It is possible to use ``"all"`` instead of listing all values separately.
+
+
+extractor.nitter.quoted
+-----------------------
+Type
+    ``bool``
+Default
+    ``false``
+Description
+    Fetch media from quoted Tweets.
+
+
+extractor.nitter.retweets
+-------------------------
+Type
+    ``bool``
+Default
+    ``false``
+Description
+    Fetch media from Retweets.
+
+
+extractor.nitter.videos
+-----------------------
+Type
+    * ``bool``
+    * ``string``
+Default
+    ``true``
+Description
+    Control video download behavior.
+
+    * ``true``: Download videos
+    * ``"ytdl"``: Download videos using `youtube-dl`_
+    * ``false``: Skip video Tweets
+
+
+extractor.oauth.browser
+-----------------------
+Type
+    ``bool``
+Default
+    ``true``
+Description
+    Controls how a user is directed to an OAuth authorization page.
+
+    * ``true``: Use Python's |webbrowser.open()|_ method to automatically
+      open the URL in the user's default browser.
+    * ``false``: Ask the user to copy & paste an URL from the terminal.
+
+
+extractor.oauth.cache
+---------------------
+Type
+    ``bool``
+Default
+    ``true``
+Description
+    Store tokens received during OAuth authorizations
+    in `cache <cache.file_>`__.
+
+
+extractor.oauth.host
+--------------------
+Type
+    ``string``
+Default
+    ``"localhost"``
+Description
+    Host name / IP address to bind to during OAuth authorization.
+
+
+extractor.oauth.port
+--------------------
+Type
+    ``integer``
+Default
+    ``6414``
+Description
+    Port number to listen on during OAuth authorization.
+
+    Note: All redirects will go to port ``6414``, regardless
+    of the port specified here. You'll have to manually adjust the
+    port number in your browser's address bar when using a different
+    port than the default.
+
+
 extractor.paheal.metadata
 -------------------------
 Type
