@@ -1667,3 +1667,179 @@ Default
     ``true``
 Description
     Download video files.
+
+
+extractor.ytdl.enabled
+----------------------
+Type
+    ``bool``
+Default
+    ``false``
+Description
+    Match **all** URLs, even ones without a ``ytdl:`` prefix.
+
+
+extractor.ytdl.format
+---------------------
+Type
+    ``string``
+Default
+    youtube-dl's default, currently ``"bestvideo+bestaudio/best"``
+Description
+    Video `format selection
+    <https://github.com/ytdl-org/youtube-dl#format-selection>`__
+    directly passed to youtube-dl.
+
+
+extractor.ytdl.generic
+----------------------
+Type
+    ``bool``
+Default
+    ``true``
+Description
+    Controls the use of youtube-dl's generic extractor.
+
+    Set this option to ``"force"`` for the same effect as youtube-dl's
+    ``--force-generic-extractor``.
+
+
+extractor.ytdl.logging
+----------------------
+Type
+    ``bool``
+Default
+    ``true``
+Description
+    Route youtube-dl's output through gallery-dl's logging system.
+    Otherwise youtube-dl will write its output directly to stdout/stderr.
+
+    Note: Set ``quiet`` and ``no_warnings`` in
+    `extractor.ytdl.raw-options`_ to ``true`` to suppress all output.
+
+
+extractor.ytdl.module
+---------------------
+Type
+    ``string``
+Default
+    ``null``
+Description
+    Name of the youtube-dl Python module to import.
+
+    Setting this to ``null`` will try to import ``"yt_dlp"``
+    followed by ``"youtube_dl"`` as fallback.
+
+
+extractor.ytdl.raw-options
+--------------------------
+Type
+    ``object`` (`name` -> `value`)
+Example
+    .. code:: json
+
+        {
+            "quiet": true,
+            "writesubtitles": true,
+            "merge_output_format": "mkv"
+        }
+
+Description
+    Additional options passed directly to the ``YoutubeDL`` constructor.
+
+    All available options can be found in `youtube-dl's docstrings
+    <https://github.com/ytdl-org/youtube-dl/blob/master/youtube_dl/YoutubeDL.py#L138-L318>`__.
+
+
+extractor.ytdl.cmdline-args
+---------------------------
+Type
+    * ``string``
+    * ``list`` of ``strings``
+Example
+    * ``"--quiet --write-sub --merge-output-format mkv"``
+    * ``["--quiet", "--write-sub", "--merge-output-format", "mkv"]``
+Description
+    Additional options specified as youtube-dl command-line arguments.
+
+
+extractor.ytdl.config-file
+--------------------------
+Type
+    |Path|_
+Example
+    ``"~/.config/youtube-dl/config"``
+Description
+    Location of a youtube-dl configuration file to load options from.
+
+
+extractor.zerochan.metadata
+---------------------------
+Type
+    ``bool``
+Default
+    ``false``
+Description
+    Extract additional metadata (date, md5, tags, ...)
+
+    Note: This requires 1-2 additional HTTP requests per post.
+
+
+extractor.[booru].tags
+----------------------
+Type
+    ``bool``
+Default
+    ``false``
+Description
+    Categorize tags by their respective types
+    and provide them as ``tags_<type>`` metadata fields.
+
+    Note: This requires 1 additional HTTP request per post.
+
+
+extractor.[booru].notes
+-----------------------
+Type
+    ``bool``
+Default
+    ``false``
+Description
+    Extract overlay notes (position and text).
+
+    Note: This requires 1 additional HTTP request per post.
+
+
+extractor.[booru].url
+---------------------
+Type
+    ``string``
+Default
+    ``"file_url"``
+Example
+    ``"preview_url"``
+Description
+    Alternate field name to retrieve download URLs from.
+
+
+extractor.[manga-extractor].chapter-reverse
+-------------------------------------------
+Type
+    ``bool``
+Default
+    ``false``
+Description
+    Reverse the order of chapter URLs extracted from manga pages.
+
+    * ``true``: Start with the latest chapter
+    * ``false``: Start with the first chapter
+
+
+extractor.[manga-extractor].page-reverse
+----------------------------------------
+Type
+    ``bool``
+Default
+    ``false``
+Description
+    Download manga chapter pages in reverse order.
