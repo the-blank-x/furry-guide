@@ -1,1785 +1,1785 @@
-Configuration
+AAAAAAAAAAAAA
 #############
 
-| Configuration files for *gallery-dl* use a JSON-based file format.
-| For a (more or less) complete example with options set to their default values,
-  see `gallery-dl.conf <gallery-dl.conf>`__.
-| For a configuration file example with more involved settings and options,
-  see `gallery-dl-example.conf <gallery-dl-example.conf>`__.
+| AAAAAAAAAAAAA AAAAA AAA *AAAAAAA-AA* AAA A AAAA-AAAAA AAAA AAAAAA.
+| AAA A (AAAA AA AAAA) AAAAAAAA AAAAAAA AAAA AAAAAAA AAA AA AAAAA AAAAAAA AAAAAA,
+  AAA `AAAAAAA-AA.AAAA <AAAAAAA-AA.AAAA>`AA.
+| AAA A AAAAAAAAAAAAA AAAA AAAAAAA AAAA AAAA AAAAAAAA AAAAAAAA AAA AAAAAAA,
+  AAA `AAAAAAA-AA-AAAAAAA.AAAA <AAAAAAA-AA-AAAAAAA.AAAA>`AA.
 |
 
-This file lists all available configuration options and their descriptions.
+AAAA AAAA AAAAA AAA AAAAAAAAA AAAAAAAAAAAAA AAAAAAA AAA AAAAA AAAAAAAAAAAA.
 
 
-Contents
+AAAAAAAA
 ========
 
-1) `Extractor Options`_
-2) `Extractor-specific Options`_
-3) `Downloader Options`_
-4) `Output Options`_
-5) `Postprocessor Options`_
-6) `Miscellaneous Options`_
-7) `API Tokens & IDs`_
+A) `AAAAAAAAA AAAAAAA`A
+A) `AAAAAAAAA-AAAAAAAA AAAAAAA`A
+A) `AAAAAAAAAA AAAAAAA`A
+A) `AAAAAA AAAAAAA`A
+A) `AAAAAAAAAAAAA AAAAAAA`A
+A) `AAAAAAAAAAAAA AAAAAAA`A
+A) `AAA AAAAAA & AAA`A
 
 
-Extractor-specific Options
+AAAAAAAAA-AAAAAAAA AAAAAAA
 ==========================
 
 
-extractor.mangadex.api-server
+AAAAAAAAA.AAAAAAAA.AAA-AAAAAA
 -----------------------------
-Type
-    ``string``
-Default
-    ``"https://api.mangadex.org"``
-Description
-    The server to use for API requests.
+AAAA
+    ``AAAAAA``
+AAAAAAA
+    ``"AAAAA://AAA.AAAAAAAA.AAA"``
+AAAAAAAAAAA
+    AAA AAAAAA AA AAA AAA AAA AAAAAAAA.
 
 
-extractor.mangadex.api-parameters
+AAAAAAAAA.AAAAAAAA.AAA-AAAAAAAAAA
 ---------------------------------
-Type
-    ``object`` (`name` -> `value`)
-Example
-    ``{"order[updatedAt]": "desc"}``
-Description
-    Additional query parameters to send when fetching manga chapters.
+AAAA
+    ``AAAAAA`` (`AAAA` -> `AAAAA`)
+AAAAAAA
+    ``{"AAAAA[AAAAAAAAA]": "AAAA"}``
+AAAAAAAAAAA
+    AAAAAAAAAA AAAAA AAAAAAAAAA AA AAAA AAAA AAAAAAAA AAAAA AAAAAAAA.
 
-    (See `/manga/{id}/feed <https://api.mangadex.org/docs/swagger.html#/Manga/get-manga-id-feed>`__
-    and `/user/follows/manga/feed <https://api.mangadex.org/docs/swagger.html#/Feed/get-user-follows-manga-feed>`__)
+    (AAA `/AAAAA/{AA}/AAAA <AAAAA://AAA.AAAAAAAA.AAA/AAAA/AAAAAAA.AAAA#/AAAAA/AAA-AAAAA-AA-AAAA>`AA
+    AAA `/AAAA/AAAAAAA/AAAAA/AAAA <AAAAA://AAA.AAAAAAAA.AAA/AAAA/AAAAAAA.AAAA#/AAAA/AAA-AAAA-AAAAAAA-AAAAA-AAAA>`AA)
 
 
-extractor.mangadex.lang
+AAAAAAAAA.AAAAAAAA.AAAA
 -----------------------
-Type
-    * ``string``
-    * ``list`` of ``strings``
-Example
-    * ``"en"``
-    * ``"fr,it"``
-    * ``["fr", "it"]``
-Description
-    `ISO 639-1 <https://en.wikipedia.org/wiki/ISO_639-1>`__ language codes
-    to filter chapters by.
+AAAA
+    * ``AAAAAA``
+    * ``AAAA`` AA ``AAAAAAA``
+AAAAAAA
+    * ``"AA"``
+    * ``"AA,AA"``
+    * ``["AA", "AA"]``
+AAAAAAAAAAA
+    `AAA AAA-A <AAAAA://AA.AAAAAAAAA.AAA/AAAA/AAAAAAA-A>`AA AAAAAAAA AAAAA
+    AA AAAAAA AAAAAAAA AA.
 
 
-extractor.mangadex.ratings
+AAAAAAAAA.AAAAAAAA.AAAAAAA
 --------------------------
-Type
-    ``list`` of ``strings``
-Default
-    ``["safe", "suggestive", "erotica", "pornographic"]``
-Description
-    List of acceptable content ratings for returned chapters.
+AAAA
+    ``AAAA`` AA ``AAAAAAA``
+AAAAAAA
+    ``["AAAA", "AAAAAAAAAA", "AAAAAAA", "AAAAAAAAAAAA"]``
+AAAAAAAAAAA
+    AAAA AA AAAAAAAAAA AAAAAAA AAAAAAA AAA AAAAAAAA AAAAAAAA.
 
 
-extractor.mangapark.source
+AAAAAAAAA.AAAAAAAAA.AAAAAA
 --------------------------
-Type
-    * ``string``
-    * ``integer``
-Example
-    * ``"koala:en"``
-    * ``15150116``
-Description
-    Select chapter source and language for a manga.
+AAAA
+    * ``AAAAAA``
+    * ``AAAAAAA``
+AAAAAAA
+    * ``"AAAAA:AA"``
+    * ``AAAAAAAA``
+AAAAAAAAAAA
+    AAAAAA AAAAAAA AAAAAA AAA AAAAAAAA AAA A AAAAA.
 
-    | The general syntax is ``"<source name>:<ISO 639-1 language code>"``.
-    | Both are optional, meaning ``"koala"``, ``"koala:"``, ``":en"``,
-      or even just ``":"`` are possible as well.
+    | AAA AAAAAAA AAAAAA AA ``"<AAAAAA AAAA>:<AAA AAA-A AAAAAAAA AAAA>"``.
+    | AAAA AAA AAAAAAAA, AAAAAAA ``"AAAAA"``, ``"AAAAA:"``, ``":AA"``,
+      AA AAAA AAAA ``":"`` AAA AAAAAAAA AA AAAA.
 
-    Specifying the numeric ``ID`` of a source is also supported.
+    AAAAAAAAAA AAA AAAAAAA ``AA`` AA A AAAAAA AA AAAA AAAAAAAAA.
 
 
-extractor.[mastodon].access-token
+AAAAAAAAA.[AAAAAAAA].AAAAAA-AAAAA
 ---------------------------------
-Type
-    ``string``
-Default
-    ``null``
-Description
-    The ``access-token`` value you get from `linking your account to
-    gallery-dl <OAuth_>`__.
+AAAA
+    ``AAAAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAA ``AAAAAA-AAAAA`` AAAAA AAA AAA AAAA `AAAAAAA AAAA AAAAAAA AA
+    AAAAAAA-AA <AAAAAA>`AA.
 
-    Note: gallery-dl comes with built-in tokens for ``mastodon.social``,
-    ``pawoo`` and ``baraag``. For other instances, you need to obtain an
-    ``access-token`` in order to use usernames in place of numerical
-    user IDs.
+    AAAA: AAAAAAA-AA AAAAA AAAA AAAAA-AA AAAAAA AAA ``AAAAAAAA.AAAAAA``,
+    ``AAAAA`` AAA ``AAAAAA``. AAA AAAAA AAAAAAAAA, AAA AAAA AA AAAAAA AA
+    ``AAAAAA-AAAAA`` AA AAAAA AA AAA AAAAAAAAA AA AAAAA AA AAAAAAAAA
+    AAAA AAA.
 
 
-extractor.[mastodon].reblogs
+AAAAAAAAA.[AAAAAAAA].AAAAAAA
 ----------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Fetch media from reblogged posts.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAA AAAAA AAAA AAAAAAAAA AAAAA.
 
 
-extractor.[mastodon].replies
+AAAAAAAAA.[AAAAAAAA].AAAAAAA
 ----------------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Fetch media from replies to other posts.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAA AAAAA AAAA AAAAAAA AA AAAAA AAAAA.
 
 
-extractor.[mastodon].text-posts
+AAAAAAAAA.[AAAAAAAA].AAAA-AAAAA
 -------------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Also emit metadata for text-only posts without media content.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAA AAAA AAAAAAAA AAA AAAA-AAAA AAAAA AAAAAAA AAAAA AAAAAAA.
 
 
-extractor.[misskey].access-token
+AAAAAAAAA.[AAAAAAA].AAAAAA-AAAAA
 --------------------------------
-Type
-    ``string``
-Description
-    Your access token, necessary to fetch favorited notes.
+AAAA
+    ``AAAAAA``
+AAAAAAAAAAA
+    AAAA AAAAAA AAAAA, AAAAAAAAA AA AAAAA AAAAAAAAA AAAAA.
 
 
-extractor.[misskey].renotes
+AAAAAAAAA.[AAAAAAA].AAAAAAA
 ---------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Fetch media from renoted notes.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAA AAAAA AAAA AAAAAAA AAAAA.
 
 
-extractor.[misskey].replies
+AAAAAAAAA.[AAAAAAA].AAAAAAA
 ---------------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Fetch media from replies to other notes.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAA AAAAA AAAA AAAAAAA AA AAAAA AAAAA.
 
 
-extractor.[moebooru].pool.metadata
+AAAAAAAAA.[AAAAAAAA].AAAA.AAAAAAAA
 ----------------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Extract extended ``pool`` metadata.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAAAA AAAAAAAA ``AAAA`` AAAAAAAA.
 
-    Note: Not supported by all ``moebooru`` instances.
+    AAAA: AAA AAAAAAAAA AA AAA ``AAAAAAAA`` AAAAAAAAA.
 
 
-extractor.newgrounds.flash
+AAAAAAAAA.AAAAAAAAAA.AAAAA
 --------------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Download original Adobe Flash animations instead of pre-rendered videos.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAAAA AAAAAAAA AAAAA AAAAA AAAAAAAAAA AAAAAAA AA AAA-AAAAAAAA AAAAAA.
 
 
-extractor.newgrounds.format
+AAAAAAAAA.AAAAAAAAAA.AAAAAA
 ---------------------------
-Type
-    ``string``
-Default
-    ``"original"``
-Example
-    ``"720p"``
-Description
-    Selects the preferred format for video downloads.
+AAAA
+    ``AAAAAA``
+AAAAAAA
+    ``"AAAAAAAA"``
+AAAAAAA
+    ``"AAAA"``
+AAAAAAAAAAA
+    AAAAAAA AAA AAAAAAAAA AAAAAA AAA AAAAA AAAAAAAAA.
 
-    If the selected format is not available,
-    the next smaller one gets chosen.
+    AA AAA AAAAAAAA AAAAAA AA AAA AAAAAAAAA,
+    AAA AAAA AAAAAAA AAA AAAA AAAAAA.
 
 
-extractor.newgrounds.include
+AAAAAAAAA.AAAAAAAAAA.AAAAAAA
 ----------------------------
-Type
-    * ``string``
-    * ``list`` of ``strings``
-Default
-    ``"art"``
-Example
-    * ``"movies,audio"``
-    * ``["movies", "audio"]``
-Description
-    A (comma-separated) list of subcategories to include
-    when processing a user profile.
+AAAA
+    * ``AAAAAA``
+    * ``AAAA`` AA ``AAAAAAA``
+AAAAAAA
+    ``"AAA"``
+AAAAAAA
+    * ``"AAAAAA,AAAAA"``
+    * ``["AAAAAA", "AAAAA"]``
+AAAAAAAAAAA
+    A (AAAAA-AAAAAAAAA) AAAA AA AAAAAAAAAAAAA AA AAAAAAA
+    AAAA AAAAAAAAAA A AAAA AAAAAAA.
 
-    Possible values are
-    ``"art"``, ``"audio"``, ``"games"``, ``"movies"``.
+    AAAAAAAA AAAAAA AAA
+    ``"AAA"``, ``"AAAAA"``, ``"AAAAA"``, ``"AAAAAA"``.
 
-    It is possible to use ``"all"`` instead of listing all values separately.
+    AA AA AAAAAAAA AA AAA ``"AAA"`` AAAAAAA AA AAAAAAA AAA AAAAAA AAAAAAAAAA.
 
 
-extractor.nijie.include
+AAAAAAAAA.AAAAA.AAAAAAA
 -----------------------
-Type
-    * ``string``
-    * ``list`` of ``strings``
-Default
-    ``"illustration,doujin"``
-Description
-    A (comma-separated) list of subcategories to include
-    when processing a user profile.
+AAAA
+    * ``AAAAAA``
+    * ``AAAA`` AA ``AAAAAAA``
+AAAAAAA
+    ``"AAAAAAAAAAAA,AAAAAA"``
+AAAAAAAAAAA
+    A (AAAAA-AAAAAAAAA) AAAA AA AAAAAAAAAAAAA AA AAAAAAA
+    AAAA AAAAAAAAAA A AAAA AAAAAAA.
 
-    Possible values are
-    ``"illustration"``, ``"doujin"``, ``"favorite"``, ``"nuita"``.
+    AAAAAAAA AAAAAA AAA
+    ``"AAAAAAAAAAAA"``, ``"AAAAAA"``, ``"AAAAAAAA"``, ``"AAAAA"``.
 
-    It is possible to use ``"all"`` instead of listing all values separately.
+    AA AA AAAAAAAA AA AAA ``"AAA"`` AAAAAAA AA AAAAAAA AAA AAAAAA AAAAAAAAAA.
 
 
-extractor.nitter.quoted
+AAAAAAAAA.AAAAAA.AAAAAA
 -----------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Fetch media from quoted Tweets.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAA AAAAA AAAA AAAAAA AAAAAA.
 
 
-extractor.nitter.retweets
+AAAAAAAAA.AAAAAA.AAAAAAAA
 -------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Fetch media from Retweets.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAA AAAAA AAAA AAAAAAAA.
 
 
-extractor.nitter.videos
+AAAAAAAAA.AAAAAA.AAAAAA
 -----------------------
-Type
-    * ``bool``
-    * ``string``
-Default
-    ``true``
-Description
-    Control video download behavior.
+AAAA
+    * ``AAAA``
+    * ``AAAAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAAA AAAAA AAAAAAAA AAAAAAAA.
 
-    * ``true``: Download videos
-    * ``"ytdl"``: Download videos using `youtube-dl`_
-    * ``false``: Skip video Tweets
+    * ``AAAA``: AAAAAAAA AAAAAA
+    * ``"AAAA"``: AAAAAAAA AAAAAA AAAAA `AAAAAAA-AA`A
+    * ``AAAAA``: AAAA AAAAA AAAAAA
 
 
-extractor.oauth.browser
+AAAAAAAAA.AAAAA.AAAAAAA
 -----------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Controls how a user is directed to an OAuth authorization page.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAAAA AAA A AAAA AA AAAAAAAA AA AA AAAAA AAAAAAAAAAAAA AAAA.
 
-    * ``true``: Use Python's |webbrowser.open()|_ method to automatically
-      open the URL in the user's default browser.
-    * ``false``: Ask the user to copy & paste an URL from the terminal.
+    * ``AAAA``: AAA AAAAAA'A |AAAAAAAAAA.AAAA()|A AAAAAA AA AAAAAAAAAAAAA
+      AAAA AAA AAA AA AAA AAAA'A AAAAAAA AAAAAAA.
+    * ``AAAAA``: AAA AAA AAAA AA AAAA & AAAAA AA AAA AAAA AAA AAAAAAAA.
 
 
-extractor.oauth.cache
+AAAAAAAAA.AAAAA.AAAAA
 ---------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Store tokens received during OAuth authorizations
-    in `cache <cache.file_>`__.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAA AAAAAA AAAAAAAA AAAAAA AAAAA AAAAAAAAAAAAAA
+    AA `AAAAA <AAAAA.AAAAA>`AA.
 
 
-extractor.oauth.host
+AAAAAAAAA.AAAAA.AAAA
 --------------------
-Type
-    ``string``
-Default
-    ``"localhost"``
-Description
-    Host name / IP address to bind to during OAuth authorization.
+AAAA
+    ``AAAAAA``
+AAAAAAA
+    ``"AAAAAAAAA"``
+AAAAAAAAAAA
+    AAAA AAAA / AA AAAAAAA AA AAAA AA AAAAAA AAAAA AAAAAAAAAAAAA.
 
 
-extractor.oauth.port
+AAAAAAAAA.AAAAA.AAAA
 --------------------
-Type
-    ``integer``
-Default
-    ``6414``
-Description
-    Port number to listen on during OAuth authorization.
+AAAA
+    ``AAAAAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAA AAAAAA AA AAAAAA AA AAAAAA AAAAA AAAAAAAAAAAAA.
 
-    Note: All redirects will go to port ``6414``, regardless
-    of the port specified here. You'll have to manually adjust the
-    port number in your browser's address bar when using a different
-    port than the default.
+    AAAA: AAA AAAAAAAAA AAAA AA AA AAAA ``AAAA``, AAAAAAAAAA
+    AA AAA AAAA AAAAAAAAA AAAA. AAA'AA AAAA AA AAAAAAAA AAAAAA AAA
+    AAAA AAAAAA AA AAAA AAAAAAA'A AAAAAAA AAA AAAA AAAAA A AAAAAAAAA
+    AAAA AAAA AAA AAAAAAA.
 
 
-extractor.paheal.metadata
+AAAAAAAAA.AAAAAA.AAAAAAAA
 -------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Extract additional metadata (``source``, ``uploader``)
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAAAA AAAAAAAAAA AAAAAAAA (``AAAAAA``, ``AAAAAAAA``)
 
-    Note: This requires 1 additional HTTP request per post.
+    AAAA: AAAA AAAAAAAA A AAAAAAAAAA AAAA AAAAAAA AAA AAAA.
 
 
-extractor.patreon.files
+AAAAAAAAA.AAAAAAA.AAAAA
 -----------------------
-Type
-    ``list`` of ``strings``
-Default
-    ``["images", "image_large", "attachments", "postfile", "content"]``
-Description
-    Determines the type and order of files to be downloaded.
+AAAA
+    ``AAAA`` AA ``AAAAAAA``
+AAAAAAA
+    ``["AAAAAA", "AAAAAAAAAAA", "AAAAAAAAAAA", "AAAAAAAA", "AAAAAAA"]``
+AAAAAAAAAAA
+    AAAAAAAAAA AAA AAAA AAA AAAAA AA AAAAA AA AA AAAAAAAAAA.
 
-    Available types are
-    ``postfile``, ``images``, ``image_large``, ``attachments``, and ``content``.
+    AAAAAAAAA AAAAA AAA
+    ``AAAAAAAA``, ``AAAAAA``, ``AAAAAAAAAAA``, ``AAAAAAAAAAA``, AAA ``AAAAAAA``.
 
 
-extractor.photobucket.subalbums
+AAAAAAAAA.AAAAAAAAAAA.AAAAAAAAA
 -------------------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Download subalbums.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAAAA AAAAAAAAA.
 
 
-extractor.pillowfort.external
+AAAAAAAAA.AAAAAAAAAA.AAAAAAAA
 -----------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Follow links to external sites, e.g. Twitter,
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAAA AAAAA AA AAAAAAAA AAAAA, A.A. AAAAAAA,
 
 
-extractor.pillowfort.inline
+AAAAAAAAA.AAAAAAAAAA.AAAAAA
 ---------------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Extract inline images.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAAA AAAAAA AAAAAA.
 
 
-extractor.pillowfort.reblogs
+AAAAAAAAA.AAAAAAAAAA.AAAAAAA
 ----------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Extract media from reblogged posts.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAAAA AAAAA AAAA AAAAAAAAA AAAAA.
 
 
-extractor.pinterest.domain
+AAAAAAAAA.AAAAAAAAA.AAAAAA
 --------------------------
-Type
-    ``string``
-Default
-    ``"auto"``
-Description
-    Specifies the domain used by ``pinterest`` extractors.
+AAAA
+    ``AAAAAA``
+AAAAAAA
+    ``"AAAA"``
+AAAAAAAAAAA
+    AAAAAAAAA AAA AAAAAA AAAA AA ``AAAAAAAAA`` AAAAAAAAAA.
 
-    Setting this option to ``"auto"``
-    uses the same domain as a given input URL.
+    AAAAAAA AAAA AAAAAA AA ``"AAAA"``
+    AAAA AAA AAAA AAAAAA AA A AAAAA AAAAA AAA.
 
 
-extractor.pinterest.sections
+AAAAAAAAA.AAAAAAAAA.AAAAAAAA
 ----------------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Include pins from board sections.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAAA AAAA AAAA AAAAA AAAAAAAA.
 
 
-extractor.pinterest.videos
+AAAAAAAAA.AAAAAAAAA.AAAAAA
 --------------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Download from video pins.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAAAA AAAA AAAAA AAAA.
 
 
-extractor.pixeldrain.api-key
+AAAAAAAAA.AAAAAAAAAA.AAA-AAA
 ----------------------------
-Type
-    ``string``
-Description
-    Your account's `API key <https://pixeldrain.com/user/api_keys>`__
+AAAA
+    ``AAAAAA``
+AAAAAAAAAAA
+    AAAA AAAAAAA'A `AAA AAA <AAAAA://AAAAAAAAAA.AAA/AAAA/AAAAAAAA>`AA
 
 
-extractor.pixiv.include
+AAAAAAAAA.AAAAA.AAAAAAA
 -----------------------
-Type
-    * ``string``
-    * ``list`` of ``strings``
-Default
-    ``"artworks"``
-Example
-    * ``"avatar,background,artworks"``
-    * ``["avatar", "background", "artworks"]``
-Description
-    A (comma-separated) list of subcategories to include
-    when processing a user profile.
+AAAA
+    * ``AAAAAA``
+    * ``AAAA`` AA ``AAAAAAA``
+AAAAAAA
+    ``"AAAAAAAA"``
+AAAAAAA
+    * ``"AAAAAA,AAAAAAAAAA,AAAAAAAA"``
+    * ``["AAAAAA", "AAAAAAAAAA", "AAAAAAAA"]``
+AAAAAAAAAAA
+    A (AAAAA-AAAAAAAAA) AAAA AA AAAAAAAAAAAAA AA AAAAAAA
+    AAAA AAAAAAAAAA A AAAA AAAAAAA.
 
-    Possible values are
-    ``"artworks"``,
-    ``"avatar"``,
-    ``"background"``,
-    ``"favorite"``,
-    ``"novel-user"``,
-    ``"novel-bookmark"``.
+    AAAAAAAA AAAAAA AAA
+    ``"AAAAAAAA"``,
+    ``"AAAAAA"``,
+    ``"AAAAAAAAAA"``,
+    ``"AAAAAAAA"``,
+    ``"AAAAA-AAAA"``,
+    ``"AAAAA-AAAAAAAA"``.
 
-    It is possible to use ``"all"`` instead of listing all values separately.
+    AA AA AAAAAAAA AA AAA ``"AAA"`` AAAAAAA AA AAAAAAA AAA AAAAAA AAAAAAAAAA.
 
 
-extractor.pixiv.refresh-token
+AAAAAAAAA.AAAAA.AAAAAAA-AAAAA
 -----------------------------
-Type
-    ``string``
-Description
-    The ``refresh-token`` value you get
-    from running ``gallery-dl oauth:pixiv`` (see OAuth_) or
-    by using a third-party tool like
-    `gppt <https://github.com/eggplants/get-pixivpy-token>`__.
+AAAA
+    ``AAAAAA``
+AAAAAAAAAAA
+    AAA ``AAAAAAA-AAAAA`` AAAAA AAA AAA
+    AAAA AAAAAAA ``AAAAAAA-AA AAAAA:AAAAA`` (AAA AAAAAA) AA
+    AA AAAAA A AAAAA-AAAAA AAAA AAAA
+    `AAAA <AAAAA://AAAAAA.AAA/AAAAAAAAA/AAA-AAAAAAA-AAAAA>`AA.
 
 
-extractor.pixiv.embeds
+AAAAAAAAA.AAAAA.AAAAAA
 ----------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Download images embedded in novels.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAAAAA AAAAAA AAAAAAAA AA AAAAAA.
 
 
-extractor.pixiv.novel.full-series
+AAAAAAAAA.AAAAA.AAAAA.AAAA-AAAAAA
 ---------------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    When downloading a novel being part of a series,
-    download all novels of that series.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAA AAAAAAAAAAA A AAAAA AAAAA AAAA AA A AAAAAA,
+    AAAAAAAA AAA AAAAAA AA AAAA AAAAAA.
 
 
-extractor.pixiv.metadata
+AAAAAAAAA.AAAAA.AAAAAAAA
 ------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Fetch extended ``user`` metadata.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAA AAAAAAAA ``AAAA`` AAAAAAAA.
 
 
-extractor.pixiv.metadata-bookmark
+AAAAAAAAA.AAAAA.AAAAAAAA-AAAAAAAA
 ---------------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    For works bookmarked by
-    `your own account <extractor.pixiv.refresh-token_>`__,
-    fetch bookmark tags as ``tags_bookmark`` metadata.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAA AAAAA AAAAAAAAAA AA
+    `AAAA AAA AAAAAAA <AAAAAAAAA.AAAAA.AAAAAAA-AAAAAA>`AA,
+    AAAAA AAAAAAAA AAAA AA ``AAAAAAAAAAAAA`` AAAAAAAA.
 
-    Note: This requires 1 additional API call per bookmarked post.
+    AAAA: AAAA AAAAAAAA A AAAAAAAAAA AAA AAAA AAA AAAAAAAAAA AAAA.
 
 
-extractor.pixiv.work.related
+AAAAAAAAA.AAAAA.AAAA.AAAAAAA
 ----------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Also download related artworks.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAA AAAAAAAA AAAAAAA AAAAAAAA.
 
 
-extractor.pixiv.tags
+AAAAAAAAA.AAAAA.AAAA
 --------------------
-Type
-    ``string``
-Default
-    ``"japanese"``
-Description
-    Controls the ``tags`` metadata field.
+AAAA
+    ``AAAAAA``
+AAAAAAA
+    ``"AAAAAAAA"``
+AAAAAAAAAAA
+    AAAAAAAA AAA ``AAAA`` AAAAAAAA AAAAA.
 
-    * `"japanese"`: List of Japanese tags
-    * `"translated"`: List of translated tags
-    * `"original"`: Unmodified list with both Japanese and translated tags
+    * `"AAAAAAAA"`: AAAA AA AAAAAAAA AAAA
+    * `"AAAAAAAAAA"`: AAAA AA AAAAAAAAAA AAAA
+    * `"AAAAAAAA"`: AAAAAAAAAA AAAA AAAA AAAA AAAAAAAA AAA AAAAAAAAAA AAAA
 
 
-extractor.pixiv.ugoira
+AAAAAAAAA.AAAAA.AAAAAA
 ----------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Download Pixiv's Ugoira animations or ignore them.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAAAA AAAAA'A AAAAAA AAAAAAAAAA AA AAAAAA AAAA.
 
-    These animations come as a ``.zip`` file containing all
-    animation frames in JPEG format.
+    AAAAA AAAAAAAAAA AAAA AA A ``.AAA`` AAAA AAAAAAAAAA AAA
+    AAAAAAAAA AAAAAA AA AAAA AAAAAA.
 
-    Use an `ugoira` post processor to convert them
-    to watchable videos. (Example__)
+    AAA AA `AAAAAA` AAAA AAAAAAAAA AA AAAAAAA AAAA
+    AA AAAAAAAAA AAAAAA. (AAAAAAAAA)
 
-.. __: https://github.com/mikf/gallery-dl/blob/v1.12.3/docs/gallery-dl-example.conf#L9-L14
+.. AA: AAAAA://AAAAAA.AAA/AAAA/AAAAAAA-AA/AAAA/AA.AA.A/AAAA/AAAAAAA-AA-AAAAAAA.AAAA#AA-AAA
 
 
-extractor.pixiv.max-posts
+AAAAAAAAA.AAAAA.AAA-AAAAA
 -------------------------
-Type
-    ``integer``
-Default
-    ``0``
-Description
-    When downloading galleries, this sets the maximum number of posts to get.
-    A value of ``0`` means no limit.
+AAAA
+    ``AAAAAAA``
+AAAAAAA
+    ``A``
+AAAAAAAAAAA
+    AAAA AAAAAAAAAAA AAAAAAAAA, AAAA AAAA AAA AAAAAAA AAAAAA AA AAAAA AA AAA.
+    A AAAAA AA ``A`` AAAAA AA AAAAA.
 
 
-extractor.plurk.comments
+AAAAAAAAA.AAAAA.AAAAAAAA
 ------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Also search Plurk comments for URLs.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAA AAAAAA AAAAA AAAAAAAA AAA AAAA.
 
 
-extractor.[postmill].save-link-post-body
+AAAAAAAAA.[AAAAAAAA].AAAA-AAAA-AAAA-AAAA
 ----------------------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Whether or not to save the body for link/image posts.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAAAA AA AAA AA AAAA AAA AAAA AAA AAAA/AAAAA AAAAA.
 
 
-extractor.reactor.gif
+AAAAAAAAA.AAAAAAA.AAA
 ---------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Format in which to download animated images.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAAA AA AAAAA AA AAAAAAAA AAAAAAAA AAAAAA.
 
-    Use ``true`` to download animated images as gifs and ``false``
-    to download as mp4 videos.
+    AAA ``AAAA`` AA AAAAAAAA AAAAAAAA AAAAAA AA AAAA AAA ``AAAAA``
+    AA AAAAAAAA AA AAA AAAAAA.
 
 
-extractor.readcomiconline.captcha
+AAAAAAAAA.AAAAAAAAAAAAAAA.AAAAAAA
 ---------------------------------
-Type
-    ``string``
-Default
-    ``"stop"``
-Description
-    Controls how to handle redirects to CAPTCHA pages.
+AAAA
+    ``AAAAAA``
+AAAAAAA
+    ``"AAAA"``
+AAAAAAAAAAA
+    AAAAAAAA AAA AA AAAAAA AAAAAAAAA AA AAAAAAA AAAAA.
 
-    * ``"stop``: Stop the current extractor run.
-    * ``"wait``: Ask the user to solve the CAPTCHA and wait.
+    * ``"AAAA``: AAAA AAA AAAAAAA AAAAAAAAA AAA.
+    * ``"AAAA``: AAA AAA AAAA AA AAAAA AAA AAAAAAA AAA AAAA.
 
 
-extractor.readcomiconline.quality
+AAAAAAAAA.AAAAAAAAAAAAAAA.AAAAAAA
 ---------------------------------
-Type
-    ``string``
-Default
-    ``"auto"``
-Description
-    Sets the ``quality`` query parameter of issue pages. (``"lq"`` or ``"hq"``)
+AAAA
+    ``AAAAAA``
+AAAAAAA
+    ``"AAAA"``
+AAAAAAAAAAA
+    AAAA AAA ``AAAAAAA`` AAAAA AAAAAAAAA AA AAAAA AAAAA. (``"AA"`` AA ``"AA"``)
 
-    ``"auto"`` uses the quality parameter of the input URL
-    or ``"hq"`` if not present.
+    ``"AAAA"`` AAAA AAA AAAAAAA AAAAAAAAA AA AAA AAAAA AAA
+    AA ``"AA"`` AA AAA AAAAAAA.
 
 
-extractor.reddit.comments
+AAAAAAAAA.AAAAAA.AAAAAAAA
 -------------------------
-Type
-    ``integer``
-Default
-    ``0``
-Description
-    The value of the ``limit`` parameter when loading
-    a submission and its comments.
-    This number (roughly) specifies the total amount of comments
-    being retrieved with the first API call.
+AAAA
+    ``AAAAAAA``
+AAAAAAA
+    ``A``
+AAAAAAAAAAA
+    AAA AAAAA AA AAA ``AAAAA`` AAAAAAAAA AAAA AAAAAAA
+    A AAAAAAAAAA AAA AAA AAAAAAAA.
+    AAAA AAAAAA (AAAAAAA) AAAAAAAAA AAA AAAAA AAAAAA AA AAAAAAAA
+    AAAAA AAAAAAAAA AAAA AAA AAAAA AAA AAAA.
 
-    Reddit's internal default and maximum values for this parameter
-    appear to be 200 and 500 respectively.
+    AAAAAA'A AAAAAAAA AAAAAAA AAA AAAAAAA AAAAAA AAA AAAA AAAAAAAAA
+    AAAAAA AA AA AAA AAA AAA AAAAAAAAAAAA.
 
-    The value ``0`` ignores all comments and significantly reduces the
-    time required when scanning a subreddit.
+    AAA AAAAA ``A`` AAAAAAA AAA AAAAAAAA AAA AAAAAAAAAAAAA AAAAAAA AAA
+    AAAA AAAAAAAA AAAA AAAAAAAA A AAAAAAAAA.
 
 
-extractor.reddit.morecomments
+AAAAAAAAA.AAAAAA.AAAAAAAAAAAA
 -----------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Retrieve additional comments by resolving the ``more`` comment
-    stubs in the base comment tree.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAAAAA AAAAAAAAAA AAAAAAAA AA AAAAAAAAA AAA ``AAAA`` AAAAAAA
+    AAAAA AA AAA AAAA AAAAAAA AAAA.
 
-    Note: This requires 1 additional API call for every 100 extra comments.
+    AAAA: AAAA AAAAAAAA A AAAAAAAAAA AAA AAAA AAA AAAAA AAA AAAAA AAAAAAAA.
 
 
-extractor.reddit.date-min & .date-max
+AAAAAAAAA.AAAAAA.AAAA-AAA & .AAAA-AAA
 -------------------------------------
-Type
-    |Date|_
-Default
-    ``0`` and ``253402210800`` (timestamp of |datetime.max|_)
-Description
-    Ignore all submissions posted before/after this date.
+AAAA
+    |AAAA|A
+AAAAAAA
+    ``A`` AAA ``AAAAAAAAAAAA`` (AAAAAAAAA AA |AAAAAAAA.AAA|A)
+AAAAAAAAAAA
+    AAAAAA AAA AAAAAAAAAAA AAAAAA AAAAAA/AAAAA AAAA AAAA.
 
 
-extractor.reddit.id-min & .id-max
+AAAAAAAAA.AAAAAA.AA-AAA & .AA-AAA
 ---------------------------------
-Type
-    ``string``
-Example
-    ``"6kmzv2"``
-Description
-    Ignore all submissions posted before/after the submission with this ID.
+AAAA
+    ``AAAAAA``
+AAAAAAA
+    ``"AAAAAA"``
+AAAAAAAAAAA
+    AAAAAA AAA AAAAAAAAAAA AAAAAA AAAAAA/AAAAA AAA AAAAAAAAAA AAAA AAAA AA.
 
 
-extractor.reddit.previews
+AAAAAAAAA.AAAAAA.AAAAAAAA
 -------------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    For failed downloads from external URLs / child extractors,
-    download Reddit's preview image/video if available.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAA AAAAAA AAAAAAAAA AAAA AAAAAAAA AAAA / AAAAA AAAAAAAAAA,
+    AAAAAAAA AAAAAA'A AAAAAAA AAAAA/AAAAA AA AAAAAAAAA.
 
 
-extractor.reddit.recursion
+AAAAAAAAA.AAAAAA.AAAAAAAAA
 --------------------------
-Type
-    ``integer``
-Default
-    ``0``
-Description
-    Reddit extractors can recursively visit other submissions
-    linked to in the initial set of submissions.
-    This value sets the maximum recursion depth.
+AAAA
+    ``AAAAAAA``
+AAAAAAA
+    ``A``
+AAAAAAAAAAA
+    AAAAAA AAAAAAAAAA AAA AAAAAAAAAAA AAAAA AAAAA AAAAAAAAAAA
+    AAAAAA AA AA AAA AAAAAAA AAA AA AAAAAAAAAAA.
+    AAAA AAAAA AAAA AAA AAAAAAA AAAAAAAAA AAAAA.
 
-    Special values:
+    AAAAAAA AAAAAA:
 
-    * ``0``: Recursion is disabled
-    * ``-1``: Infinite recursion (don't do this)
+    * ``A``: AAAAAAAAA AA AAAAAAAA
+    * ``-A``: AAAAAAAA AAAAAAAAA (AAA'A AA AAAA)
 
 
-extractor.reddit.refresh-token
+AAAAAAAAA.AAAAAA.AAAAAAA-AAAAA
 ------------------------------
-Type
-    ``string``
-Default
-    ``null``
-Description
-    The ``refresh-token`` value you get from
-    `linking your Reddit account to gallery-dl <OAuth_>`__.
+AAAA
+    ``AAAAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAA ``AAAAAAA-AAAAA`` AAAAA AAA AAA AAAA
+    `AAAAAAA AAAA AAAAAA AAAAAAA AA AAAAAAA-AA <AAAAAA>`AA.
 
-    Using a ``refresh-token`` allows you to access private or otherwise
-    not publicly available subreddits, given that your account is
-    authorized to do so,
-    but requests to the reddit API are going to be rate limited
-    at 600 requests every 10 minutes/600 seconds.
+    AAAAA A ``AAAAAAA-AAAAA`` AAAAAA AAA AA AAAAAA AAAAAAA AA AAAAAAAAA
+    AAA AAAAAAAA AAAAAAAAA AAAAAAAAAA, AAAAA AAAA AAAA AAAAAAA AA
+    AAAAAAAAAA AA AA AA,
+    AAA AAAAAAAA AA AAA AAAAAA AAA AAA AAAAA AA AA AAAA AAAAAAA
+    AA AAA AAAAAAAA AAAAA AA AAAAAAA/AAA AAAAAAA.
 
 
-extractor.reddit.videos
+AAAAAAAAA.AAAAAA.AAAAAA
 -----------------------
-Type
-    * ``bool``
-    * ``string``
-Default
-    ``true``
-Description
-    Control video download behavior.
+AAAA
+    * ``AAAA``
+    * ``AAAAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAAA AAAAA AAAAAAAA AAAAAAAA.
 
-    * ``true``: Download videos and use `youtube-dl`_ to handle
-      HLS and DASH manifests
-    * ``"ytdl"``: Download videos and let `youtube-dl`_ handle all of
-      video extraction and download
-    * ``"dash"``: Extract DASH manifest URLs and use `youtube-dl`_
-      to download and merge them. (*)
-    * ``false``: Ignore videos
+    * ``AAAA``: AAAAAAAA AAAAAA AAA AAA `AAAAAAA-AA`A AA AAAAAA
+      AAA AAA AAAA AAAAAAAAA
+    * ``"AAAA"``: AAAAAAAA AAAAAA AAA AAA `AAAAAAA-AA`A AAAAAA AAA AA
+      AAAAA AAAAAAAAAA AAA AAAAAAAA
+    * ``"AAAA"``: AAAAAAA AAAA AAAAAAAA AAAA AAA AAA `AAAAAAA-AA`A
+      AA AAAAAAAA AAA AAAAA AAAA. (*)
+    * ``AAAAA``: AAAAAA AAAAAA
 
     (*)
-    This saves 1 HTTP request per video
-    and might potentially be able to download otherwise deleted videos,
-    but it will not always get the best video quality available.
+    AAAA AAAAA A AAAA AAAAAAA AAA AAAAA
+    AAA AAAAA AAAAAAAAAAA AA AAAA AA AAAAAAAA AAAAAAAAA AAAAAAA AAAAAA,
+    AAA AA AAAA AAA AAAAAA AAA AAA AAAA AAAAA AAAAAAA AAAAAAAAA.
 
 
-extractor.redgifs.format
+AAAAAAAAA.AAAAAAA.AAAAAA
 ------------------------
-Type
-    * ``string``
-    * ``list`` of ``strings``
-Default
-    ``["hd", "sd", "gif"]``
-Description
-    List of names of the preferred animation format, which can be
-    ``"hd"``,
-    ``"sd"``,
-    ``"gif"``,
-    ``"thumbnail"``,
-    ``"vthumbnail"``, or
-    ``"poster"``.
+AAAA
+    * ``AAAAAA``
+    * ``AAAA`` AA ``AAAAAAA``
+AAAAAAA
+    ``["AA", "AA", "AAA"]``
+AAAAAAAAAAA
+    AAAA AA AAAAA AA AAA AAAAAAAAA AAAAAAAAA AAAAAA, AAAAA AAA AA
+    ``"AA"``,
+    ``"AA"``,
+    ``"AAA"``,
+    ``"AAAAAAAAA"``,
+    ``"AAAAAAAAAA"``, AA
+    ``"AAAAAA"``.
 
-    If a selected format is not available, the next one in the list will be
-    tried until an available format is found.
+    AA A AAAAAAAA AAAAAA AA AAA AAAAAAAAA, AAA AAAA AAA AA AAA AAAA AAAA AA
+    AAAAA AAAAA AA AAAAAAAAA AAAAAA AA AAAAA.
 
-    If the format is given as ``string``, it will be extended with
-    ``["hd", "sd", "gif"]``. Use a list with one element to
-    restrict it to only one possible format.
+    AA AAA AAAAAA AA AAAAA AA ``AAAAAA``, AA AAAA AA AAAAAAAA AAAA
+    ``["AA", "AA", "AAA"]``. AAA A AAAA AAAA AAA AAAAAAA AA
+    AAAAAAAA AA AA AAAA AAA AAAAAAAA AAAAAA.
 
 
-extractor.sankaku.refresh
+AAAAAAAAA.AAAAAAA.AAAAAAA
 -------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Refresh download URLs before they expire.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAAAA AAAAAAAA AAAA AAAAAA AAAA AAAAAA.
 
 
-extractor.sankakucomplex.embeds
+AAAAAAAAA.AAAAAAAAAAAAAA.AAAAAA
 -------------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Download video embeds from external sites.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAAAAA AAAAA AAAAAA AAAA AAAAAAAA AAAAA.
 
 
-extractor.sankakucomplex.videos
+AAAAAAAAA.AAAAAAAAAAAAAA.AAAAAA
 -------------------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Download videos.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAAAA AAAAAA.
 
 
-extractor.skeb.article
+AAAAAAAAA.AAAA.AAAAAAA
 ----------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Download article images.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAAAAA AAAAAAA AAAAAA.
 
 
-extractor.skeb.sent-requests
+AAAAAAAAA.AAAA.AAAA-AAAAAAAA
 ----------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Download sent requests.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAAAAA AAAA AAAAAAAA.
 
 
-extractor.skeb.thumbnails
+AAAAAAAAA.AAAA.AAAAAAAAAA
 -------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Download thumbnails.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAAAAA AAAAAAAAAA.
 
 
-extractor.skeb.search.filters
+AAAAAAAAA.AAAA.AAAAAA.AAAAAAA
 -----------------------------
-Type
-    * ``string``
-    * ``list`` of ``strings``
-Default
-    ``["genre:art", "genre:voice", "genre:novel", "genre:video", "genre:music", "genre:correction"]``
-Example
-    ``"genre:music OR genre:voice"``
-Description
-    Filters used during searches.
+AAAA
+    * ``AAAAAA``
+    * ``AAAA`` AA ``AAAAAAA``
+AAAAAAA
+    ``["AAAAA:AAA", "AAAAA:AAAAA", "AAAAA:AAAAA", "AAAAA:AAAAA", "AAAAA:AAAAA", "AAAAA:AAAAAAAAAA"]``
+AAAAAAA
+    ``"AAAAA:AAAAA AA AAAAA:AAAAA"``
+AAAAAAAAAAA
+    AAAAAAA AAAA AAAAAA AAAAAAAA.
 
 
-extractor.smugmug.videos
+AAAAAAAAA.AAAAAAA.AAAAAA
 ------------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Download video files.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAAAA AAAAA AAAAA.
 
 
-extractor.steamgriddb.animated
+AAAAAAAAA.AAAAAAAAAAA.AAAAAAAA
 ------------------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Include animated assets when downloading from a list of assets.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAAA AAAAAAAA AAAAAA AAAA AAAAAAAAAAA AAAA A AAAA AA AAAAAA.
 
 
-extractor.steamgriddb.epilepsy
+AAAAAAAAA.AAAAAAAAAAA.AAAAAAAA
 ------------------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Include assets tagged with epilepsy when downloading from a list of assets.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAAA AAAAAA AAAAAA AAAA AAAAAAAA AAAA AAAAAAAAAAA AAAA A AAAA AA AAAAAA.
 
 
-extractor.steamgriddb.dimensions
+AAAAAAAAA.AAAAAAAAAAA.AAAAAAAAAA
 --------------------------------
-Type
-    * ``string``
-    * ``list`` of ``strings``
-Default
-    ``"all"``
-Examples
-    * ``"1024x512,512x512"``
-    * ``["460x215", "920x430"]``
-Description
-    Only include assets that are in the specified dimensions. ``all`` can be
-    used to specify all dimensions. Valid values are:
+AAAA
+    * ``AAAAAA``
+    * ``AAAA`` AA ``AAAAAAA``
+AAAAAAA
+    ``"AAA"``
+AAAAAAAA
+    * ``"AAAAAAAA,AAAAAAA"``
+    * ``["AAAAAAA", "AAAAAAA"]``
+AAAAAAAAAAA
+    AAAA AAAAAAA AAAAAA AAAA AAA AA AAA AAAAAAAAA AAAAAAAAAA. ``AAA`` AAA AA
+    AAAA AA AAAAAAA AAA AAAAAAAAAA. AAAAA AAAAAA AAA:
 
-    * Grids: ``460x215``, ``920x430``, ``600x900``, ``342x482``, ``660x930``,
-      ``512x512``, ``1024x1024``
-    * Heroes: ``1920x620``, ``3840x1240``, ``1600x650``
-    * Logos: N/A (will be ignored)
-    * Icons: ``8x8``, ``10x10``, ``14x14``, ``16x16``, ``20x20``, ``24x24``,
-      ``28x28``, ``32x32``, ``35x35``, ``40x40``, ``48x48``, ``54x54``,
-      ``56x56``, ``57x57``, ``60x60``, ``64x64``, ``72x72``, ``76x76``,
-      ``80x80``, ``90x90``, ``96x96``, ``100x100``, ``114x114``, ``120x120``,
-      ``128x128``, ``144x144``, ``150x150``, ``152x152``, ``160x160``,
-      ``180x180``, ``192x192``, ``194x194``, ``256x256``, ``310x310``,
-      ``512x512``, ``768x768``, ``1024x1024``
+    * AAAAA: ``AAAAAAA``, ``AAAAAAA``, ``AAAAAAA``, ``AAAAAAA``, ``AAAAAAA``,
+      ``AAAAAAA``, ``AAAAAAAAA``
+    * AAAAAA: ``AAAAAAAA``, ``AAAAAAAAA``, ``AAAAAAAA``
+    * AAAAA: A/A (AAAA AA AAAAAAA)
+    * AAAAA: ``AAA``, ``AAAAA``, ``AAAAA``, ``AAAAA``, ``AAAAA``, ``AAAAA``,
+      ``AAAAA``, ``AAAAA``, ``AAAAA``, ``AAAAA``, ``AAAAA``, ``AAAAA``,
+      ``AAAAA``, ``AAAAA``, ``AAAAA``, ``AAAAA``, ``AAAAA``, ``AAAAA``,
+      ``AAAAA``, ``AAAAA``, ``AAAAA``, ``AAAAAAA``, ``AAAAAAA``, ``AAAAAAA``,
+      ``AAAAAAA``, ``AAAAAAA``, ``AAAAAAA``, ``AAAAAAA``, ``AAAAAAA``,
+      ``AAAAAAA``, ``AAAAAAA``, ``AAAAAAA``, ``AAAAAAA``, ``AAAAAAA``,
+      ``AAAAAAA``, ``AAAAAAA``, ``AAAAAAAAA``
 
 
-extractor.steamgriddb.file-types
+AAAAAAAAA.AAAAAAAAAAA.AAAA-AAAAA
 --------------------------------
-Type
-    * ``string``
-    * ``list`` of ``strings``
-Default
-    ``"all"``
-Examples
-    * ``"png,jpeg"``
-    * ``["jpeg", "webp"]``
-Description
-    Only include assets that are in the specified file types. ``all`` can be
-    used to specifiy all file types. Valid values are:
+AAAA
+    * ``AAAAAA``
+    * ``AAAA`` AA ``AAAAAAA``
+AAAAAAA
+    ``"AAA"``
+AAAAAAAA
+    * ``"AAA,AAAA"``
+    * ``["AAAA", "AAAA"]``
+AAAAAAAAAAA
+    AAAA AAAAAAA AAAAAA AAAA AAA AA AAA AAAAAAAAA AAAA AAAAA. ``AAA`` AAA AA
+    AAAA AA AAAAAAAA AAA AAAA AAAAA. AAAAA AAAAAA AAA:
 
-    * Grids: ``png``, ``jpeg``, ``jpg``, ``webp``
-    * Heroes: ``png``, ``jpeg``, ``jpg``, ``webp``
-    * Logos: ``png``, ``webp``
-    * Icons: ``png``, ``ico``
+    * AAAAA: ``AAA``, ``AAAA``, ``AAA``, ``AAAA``
+    * AAAAAA: ``AAA``, ``AAAA``, ``AAA``, ``AAAA``
+    * AAAAA: ``AAA``, ``AAAA``
+    * AAAAA: ``AAA``, ``AAA``
 
 
-extractor.steamgriddb.download-fake-png
+AAAAAAAAA.AAAAAAAAAAA.AAAAAAAA-AAAA-AAA
 ---------------------------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Download fake PNGs alongside the real file.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAAAA AAAA AAAA AAAAAAAAA AAA AAAA AAAA.
 
 
-extractor.steamgriddb.humor
+AAAAAAAAA.AAAAAAAAAAA.AAAAA
 ---------------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Include assets tagged with humor when downloading from a list of assets.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAAA AAAAAA AAAAAA AAAA AAAAA AAAA AAAAAAAAAAA AAAA A AAAA AA AAAAAA.
 
 
-extractor.steamgriddb.languages
+AAAAAAAAA.AAAAAAAAAAA.AAAAAAAAA
 -------------------------------
-Type
-    * ``string``
-    * ``list`` of ``strings``
-Default
-    ``"all"``
-Examples
-    * ``"en,km"``
-    * ``["fr", "it"]``
-Description
-    Only include assets that are in the specified languages. ``all`` can be
-    used to specifiy all languages. Valid values are `ISO 639-1 <https://en.wikipedia.org/wiki/ISO_639-1>`__
-    language codes.
+AAAA
+    * ``AAAAAA``
+    * ``AAAA`` AA ``AAAAAAA``
+AAAAAAA
+    ``"AAA"``
+AAAAAAAA
+    * ``"AA,AA"``
+    * ``["AA", "AA"]``
+AAAAAAAAAAA
+    AAAA AAAAAAA AAAAAA AAAA AAA AA AAA AAAAAAAAA AAAAAAAAA. ``AAA`` AAA AA
+    AAAA AA AAAAAAAA AAA AAAAAAAAA. AAAAA AAAAAA AAA `AAA AAA-A <AAAAA://AA.AAAAAAAAA.AAA/AAAA/AAAAAAA-A>`AA
+    AAAAAAAA AAAAA.
 
 
-extractor.steamgriddb.nsfw
+AAAAAAAAA.AAAAAAAAAAA.AAAA
 --------------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Include assets tagged with adult content when downloading from a list of assets.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAAA AAAAAA AAAAAA AAAA AAAAA AAAAAAA AAAA AAAAAAAAAAA AAAA A AAAA AA AAAAAA.
 
 
-extractor.steamgriddb.sort
+AAAAAAAAA.AAAAAAAAAAA.AAAA
 --------------------------
-Type
-    ``string``
-Default
-    ``score_desc``
-Description
-    Set the chosen sorting method when downloading from a list of assets. Can be one of:
+AAAA
+    ``AAAAAA``
+AAAAAAA
+    ``AAAAAAAAAA``
+AAAAAAAAAAA
+    AAA AAA AAAAAA AAAAAAA AAAAAA AAAA AAAAAAAAAAA AAAA A AAAA AA AAAAAA. AAA AA AAA AA:
 
-    * ``score_desc`` (Highest Score (Beta))
-    * ``score_asc`` (Lowest Score (Beta))
-    * ``score_old_desc`` (Highest Score (Old))
-    * ``score_old_asc`` (Lowest Score (Old))
-    * ``age_desc`` (Newest First)
-    * ``age_asc`` (Oldest First)
+    * ``AAAAAAAAAA`` (AAAAAAA AAAAA (AAAA))
+    * ``AAAAAAAAA`` (AAAAAA AAAAA (AAAA))
+    * ``AAAAAAAAAAAAAA`` (AAAAAAA AAAAA (AAA))
+    * ``AAAAAAAAAAAAA`` (AAAAAA AAAAA (AAA))
+    * ``AAAAAAAA`` (AAAAAA AAAAA)
+    * ``AAAAAAA`` (AAAAAA AAAAA)
 
 
-extractor.steamgriddb.static
+AAAAAAAAA.AAAAAAAAAAA.AAAAAA
 ----------------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Include static assets when downloading from a list of assets.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAAA AAAAAA AAAAAA AAAA AAAAAAAAAAA AAAA A AAAA AA AAAAAA.
 
 
-extractor.steamgriddb.styles
+AAAAAAAAA.AAAAAAAAAAA.AAAAAA
 ----------------------------
-Type
-    * ``string``
-    * ``list`` of ``strings``
-Default
-    ``all``
-Examples
-    * ``white,black``
-    * ``["no_logo", "white_logo"]``
-Description
-    Only include assets that are in the specified styles. ``all`` can be used
-    to specify all styles. Valid values are:
+AAAA
+    * ``AAAAAA``
+    * ``AAAA`` AA ``AAAAAAA``
+AAAAAAA
+    ``AAA``
+AAAAAAAA
+    * ``AAAAA,AAAAA``
+    * ``["AAAAAAA", "AAAAAAAAAA"]``
+AAAAAAAAAAA
+    AAAA AAAAAAA AAAAAA AAAA AAA AA AAA AAAAAAAAA AAAAAA. ``AAA`` AAA AA AAAA
+    AA AAAAAAA AAA AAAAAA. AAAAA AAAAAA AAA:
 
-    * Grids: ``alternate``, ``blurred``, ``no_logo``, ``material``, ``white_logo``
-    * Heroes: ``alternate``, ``blurred``, ``material``
-    * Logos: ``official``, ``white``, ``black``, ``custom``
-    * Icons: ``official``, ``custom``
+    * AAAAA: ``AAAAAAAAA``, ``AAAAAAA``, ``AAAAAAA``, ``AAAAAAAA``, ``AAAAAAAAAA``
+    * AAAAAA: ``AAAAAAAAA``, ``AAAAAAA``, ``AAAAAAAA``
+    * AAAAA: ``AAAAAAAA``, ``AAAAA``, ``AAAAA``, ``AAAAAA``
+    * AAAAA: ``AAAAAAAA``, ``AAAAAA``
 
 
-extractor.steamgriddb.untagged
+AAAAAAAAA.AAAAAAAAAAA.AAAAAAAA
 ------------------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Include untagged assets when downloading from a list of assets.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAAA AAAAAAAA AAAAAA AAAA AAAAAAAAAAA AAAA A AAAA AA AAAAAA.
 
 
-extractor.[szurubooru].username & .token
+AAAAAAAAA.[AAAAAAAAAA].AAAAAAAA & .AAAAA
 ----------------------------------------
-Type
-    ``string``
-Description
-    Username and login token of your account to access private resources.
+AAAA
+    ``AAAAAA``
+AAAAAAAAAAA
+    AAAAAAAA AAA AAAAA AAAAA AA AAAA AAAAAAA AA AAAAAA AAAAAAA AAAAAAAAA.
 
-    To generate a token, visit ``/user/USERNAME/list-tokens``
-    and click ``Create Token``.
+    AA AAAAAAAA A AAAAA, AAAAA ``/AAAA/AAAAAAAA/AAAA-AAAAAA``
+    AAA AAAAA ``AAAAAA AAAAA``.
 
 
-extractor.tumblr.avatar
+AAAAAAAAA.AAAAAA.AAAAAA
 -----------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Download blog avatars.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAAAAA AAAA AAAAAAA.
 
 
-extractor.tumblr.date-min & .date-max
+AAAAAAAAA.AAAAAA.AAAA-AAA & .AAAA-AAA
 -------------------------------------
-Type
-    |Date|_
-Default
-    ``0`` and ``null``
-Description
-    Ignore all posts published before/after this date.
+AAAA
+    |AAAA|A
+AAAAAAA
+    ``A`` AAA ``AAAA``
+AAAAAAAAAAA
+    AAAAAA AAA AAAAA AAAAAAAAA AAAAAA/AAAAA AAAA AAAA.
 
 
-extractor.tumblr.external
+AAAAAAAAA.AAAAAA.AAAAAAAA
 -------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Follow external URLs (e.g. from "Link" posts) and try to extract
-    images from them.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAAA AAAAAAAA AAAA (A.A. AAAA "AAAA" AAAAA) AAA AAA AA AAAAAAA
+    AAAAAA AAAA AAAA.
 
 
-extractor.tumblr.inline
+AAAAAAAAA.AAAAAA.AAAAAA
 -----------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Search posts for inline images and videos.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAA AAAAA AAA AAAAAA AAAAAA AAA AAAAAA.
 
 
-extractor.tumblr.offset
+AAAAAAAAA.AAAAAA.AAAAAA
 -----------------------
-Type
-    ``integer``
-Default
-    ``0``
-Description
-    Custom ``offset`` starting value when paginating over blog posts.
+AAAA
+    ``AAAAAAA``
+AAAAAAA
+    ``A``
+AAAAAAAAAAA
+    AAAAAA ``AAAAAA`` AAAAAAAA AAAAA AAAA AAAAAAAAAA AAAA AAAA AAAAA.
 
-    Allows skipping over posts without having to waste API calls.
+    AAAAAA AAAAAAAA AAAA AAAAA AAAAAAA AAAAAA AA AAAAA AAA AAAAA.
 
 
-extractor.tumblr.original
+AAAAAAAAA.AAAAAA.AAAAAAAA
 -------------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Download full-resolution ``photo`` and ``inline`` images.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAAAA AAAA-AAAAAAAAAA ``AAAAA`` AAA ``AAAAAA`` AAAAAA.
 
-    For each photo with "maximum" resolution
-    (width equal to 2048 or height equal to 3072)
-    or each inline image,
-    use an extra HTTP request to find the URL to its full-resolution version.
+    AAA AAAA AAAAA AAAA "AAAAAAA" AAAAAAAAAA
+    (AAAAA AAAAA AA AAAA AA AAAAAA AAAAA AA AAAA)
+    AA AAAA AAAAAA AAAAA,
+    AAA AA AAAAA AAAA AAAAAAA AA AAAA AAA AAA AA AAA AAAA-AAAAAAAAAA AAAAAAA.
 
 
-extractor.tumblr.ratelimit
+AAAAAAAAA.AAAAAA.AAAAAAAAA
 --------------------------
-Type
-    ``string``
-Default
-    ``"abort"``
-Description
-    Selects how to handle exceeding the daily API rate limit.
+AAAA
+    ``AAAAAA``
+AAAAAAA
+    ``"AAAAA"``
+AAAAAAAAAAA
+    AAAAAAA AAA AA AAAAAA AAAAAAAAA AAA AAAAA AAA AAAA AAAAA.
 
-    * ``"abort"``: Raise an error and stop extraction
-    * ``"wait"``: Wait until rate limit reset
+    * ``"AAAAA"``: AAAAA AA AAAAA AAA AAAA AAAAAAAAAA
+    * ``"AAAA"``: AAAA AAAAA AAAA AAAAA AAAAA
 
 
-extractor.tumblr.reblogs
+AAAAAAAAA.AAAAAA.AAAAAAA
 ------------------------
-Type
-    * ``bool``
-    * ``string``
-Default
-    ``true``
-Description
-    * ``true``: Extract media from reblogged posts
-    * ``false``: Skip reblogged posts
-    * ``"same-blog"``: Skip reblogged posts unless the original post
-      is from the same blog
+AAAA
+    * ``AAAA``
+    * ``AAAAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    * ``AAAA``: AAAAAAA AAAAA AAAA AAAAAAAAA AAAAA
+    * ``AAAAA``: AAAA AAAAAAAAA AAAAA
+    * ``"AAAA-AAAA"``: AAAA AAAAAAAAA AAAAA AAAAAA AAA AAAAAAAA AAAA
+      AA AAAA AAA AAAA AAAA
 
 
-extractor.tumblr.posts
+AAAAAAAAA.AAAAAA.AAAAA
 ----------------------
-Type
-    * ``string``
-    * ``list`` of ``strings``
-Default
-    ``"all"``
-Example
-    * ``"video,audio,link"``
-    * ``["video", "audio", "link"]``
-Description
-    A (comma-separated) list of post types to extract images, etc. from.
+AAAA
+    * ``AAAAAA``
+    * ``AAAA`` AA ``AAAAAAA``
+AAAAAAA
+    ``"AAA"``
+AAAAAAA
+    * ``"AAAAA,AAAAA,AAAA"``
+    * ``["AAAAA", "AAAAA", "AAAA"]``
+AAAAAAAAAAA
+    A (AAAAA-AAAAAAAAA) AAAA AA AAAA AAAAA AA AAAAAAA AAAAAA, AAA. AAAA.
 
-    Possible types are ``text``, ``quote``, ``link``, ``answer``,
-    ``video``, ``audio``, ``photo``, ``chat``.
+    AAAAAAAA AAAAA AAA ``AAAA``, ``AAAAA``, ``AAAA``, ``AAAAAA``,
+    ``AAAAA``, ``AAAAA``, ``AAAAA``, ``AAAA``.
 
-    It is possible to use ``"all"`` instead of listing all types separately.
+    AA AA AAAAAAAA AA AAA ``"AAA"`` AAAAAAA AA AAAAAAA AAA AAAAA AAAAAAAAAA.
 
 
-extractor.tumblr.fallback-delay
+AAAAAAAAA.AAAAAA.AAAAAAAA-AAAAA
 -------------------------------
-Type
-    ``float``
-Default
-    ``120.0``
-Description
-    Number of seconds to wait between retries
-    for fetching full-resolution images.
+AAAA
+    ``AAAAA``
+AAAAAAA
+    ``AAA.A``
+AAAAAAAAAAA
+    AAAAAA AA AAAAAAA AA AAAA AAAAAAA AAAAAAA
+    AAA AAAAAAAA AAAA-AAAAAAAAAA AAAAAA.
 
 
-extractor.tumblr.fallback-retries
+AAAAAAAAA.AAAAAA.AAAAAAAA-AAAAAAA
 ---------------------------------
-Type
-    ``integer``
-Default
-    ``2``
-Description
-    Number of retries for fetching full-resolution images
-    or ``-1`` for infinite retries.
+AAAA
+    ``AAAAAAA``
+AAAAAAA
+    ``A``
+AAAAAAAAAAA
+    AAAAAA AA AAAAAAA AAA AAAAAAAA AAAA-AAAAAAAAAA AAAAAA
+    AA ``-A`` AAA AAAAAAAA AAAAAAA.
 
 
-extractor.twibooru.api-key
+AAAAAAAAA.AAAAAAAA.AAA-AAA
 --------------------------
-Type
-    ``string``
-Default
-    ``null``
-Description
-    Your `Twibooru API Key <https://twibooru.org/users/edit>`__,
-    to use your account's browsing settings and filters.
+AAAA
+    ``AAAAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAA `AAAAAAAA AAA AAA <AAAAA://AAAAAAAA.AAA/AAAAA/AAAA>`AA,
+    AA AAA AAAA AAAAAAA'A AAAAAAAA AAAAAAAA AAA AAAAAAA.
 
 
-extractor.twibooru.filter
+AAAAAAAAA.AAAAAAAA.AAAAAA
 -------------------------
-Type
-    ``integer``
-Default
-    ``2`` (`Everything <https://twibooru.org/filters/2>`__ filter)
-Description
-    The content filter ID to use.
+AAAA
+    ``AAAAAAA``
+AAAAAAA
+    ``A`` (`AAAAAAAAAA <AAAAA://AAAAAAAA.AAA/AAAAAAA/A>`AA AAAAAA)
+AAAAAAAAAAA
+    AAA AAAAAAA AAAAAA AA AA AAA.
 
-    Setting an explicit filter ID overrides any default filters and can be used
-    to access 18+ content without `API Key <extractor.twibooru.api-key_>`__.
+    AAAAAAA AA AAAAAAAA AAAAAA AA AAAAAAAAA AAA AAAAAAA AAAAAAA AAA AAA AA AAAA
+    AA AAAAAA AA+ AAAAAAA AAAAAAA `AAA AAA <AAAAAAAAA.AAAAAAAA.AAA-AAAA>`AA.
 
-    See `Filters <https://twibooru.org/filters>`__ for details.
+    AAA `AAAAAAA <AAAAA://AAAAAAAA.AAA/AAAAAAA>`AA AAA AAAAAAA.
 
 
-extractor.twitter.ads
+AAAAAAAAA.AAAAAAA.AAA
 ---------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Fetch media from promoted Tweets.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAA AAAAA AAAA AAAAAAAA AAAAAA.
 
 
-extractor.twitter.cards
+AAAAAAAAA.AAAAAAA.AAAAA
 -----------------------
-Type
-    * ``bool``
-    * ``string``
-Default
-    ``false``
-Description
-    Controls how to handle `Twitter Cards <https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards>`__.
+AAAA
+    * ``AAAA``
+    * ``AAAAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAAAAA AAA AA AAAAAA `AAAAAAA AAAAA <AAAAA://AAAAAAAAA.AAAAAAA.AAA/AA/AAAA/AAAAAAA-AAA-AAAAAAAA/AAAAA/AAAAAAAA/AAAAAA-AAAAA>`AA.
 
-    * ``false``: Ignore cards
-    * ``true``: Download image content from supported cards
-    * ``"ytdl"``: Additionally download video content from unsupported cards using `youtube-dl`_
+    * ``AAAAA``: AAAAAA AAAAA
+    * ``AAAA``: AAAAAAAA AAAAA AAAAAAA AAAA AAAAAAAAA AAAAA
+    * ``"AAAA"``: AAAAAAAAAAAA AAAAAAAA AAAAA AAAAAAA AAAA AAAAAAAAAAA AAAAA AAAAA `AAAAAAA-AA`A
 
 
-extractor.twitter.cards-blacklist
+AAAAAAAAA.AAAAAAA.AAAAA-AAAAAAAAA
 ---------------------------------
-Type
-    ``list`` of ``strings``
-Example
-    ``["summary", "youtube.com", "player:twitch.tv"]``
-Description
-    List of card types to ignore.
+AAAA
+    ``AAAA`` AA ``AAAAAAA``
+AAAAAAA
+    ``["AAAAAAA", "AAAAAAA.AAA", "AAAAAA:AAAAAA.AA"]``
+AAAAAAAAAAA
+    AAAA AA AAAA AAAAA AA AAAAAA.
 
-    Possible values are
+    AAAAAAAA AAAAAA AAA
 
-    * card names
-    * card domains
-    * ``<card name>:<card domain>``
+    * AAAA AAAAA
+    * AAAA AAAAAAA
+    * ``<AAAA AAAA>:<AAAA AAAAAA>``
 
 
-extractor.twitter.conversations
+AAAAAAAAA.AAAAAAA.AAAAAAAAAAAAA
 -------------------------------
-Type
-    * ``bool``
-    * ``string``
-Default
-    ``false``
-Description
-    For input URLs pointing to a single Tweet,
-    e.g. `https://twitter.com/i/web/status/<TweetID>`,
-    fetch media from all Tweets and replies in this `conversation
-    <https://help.twitter.com/en/using-twitter/twitter-conversations>`__.
+AAAA
+    * ``AAAA``
+    * ``AAAAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAA AAAAA AAAA AAAAAAAA AA A AAAAAA AAAAA,
+    A.A. `AAAAA://AAAAAAA.AAA/A/AAA/AAAAAA/<AAAAAAA>`,
+    AAAAA AAAAA AAAA AAA AAAAAA AAA AAAAAAA AA AAAA `AAAAAAAAAAAA
+    <AAAAA://AAAA.AAAAAAA.AAA/AA/AAAAA-AAAAAAA/AAAAAAA-AAAAAAAAAAAAA>`AA.
 
-    If this option is equal to ``"accessible"``,
-    only download from conversation Tweets
-    if the given initial Tweet is accessible.
+    AA AAAA AAAAAA AA AAAAA AA ``"AAAAAAAAAA"``,
+    AAAA AAAAAAAA AAAA AAAAAAAAAAAA AAAAAA
+    AA AAA AAAAA AAAAAAA AAAAA AA AAAAAAAAAA.
 
 
-extractor.twitter.csrf
+AAAAAAAAA.AAAAAAA.AAAA
 ----------------------
-Type
-    ``string``
-Default
-    ``"cookies"``
-Description
-    Controls how to handle Cross Site Request Forgery (CSRF) tokens.
+AAAA
+    ``AAAAAA``
+AAAAAAA
+    ``"AAAAAAA"``
+AAAAAAAAAAA
+    AAAAAAAA AAA AA AAAAAA AAAAA AAAA AAAAAAA AAAAAAA (AAAA) AAAAAA.
 
-    * ``"auto"``: Always auto-generate a token.
-    * ``"cookies"``: Use token given by the ``ct0`` cookie if present.
+    * ``"AAAA"``: AAAAAA AAAA-AAAAAAAA A AAAAA.
+    * ``"AAAAAAA"``: AAA AAAAA AAAAA AA AAA ``AAA`` AAAAAA AA AAAAAAA.
 
 
-extractor.twitter.expand
+AAAAAAAAA.AAAAAAA.AAAAAA
 ------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    For each Tweet, return *all* Tweets from that initial Tweet's
-    conversation or thread, i.e. *expand* all Twitter threads.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAA AAAA AAAAA, AAAAAA *AAA* AAAAAA AAAA AAAA AAAAAAA AAAAA'A
+    AAAAAAAAAAAA AA AAAAAA, A.A. *AAAAAA* AAA AAAAAAA AAAAAAA.
 
-    Going through a timeline with this option enabled is essentially the same
-    as running ``gallery-dl https://twitter.com/i/web/status/<TweetID>``
-    with enabled `conversations <extractor.twitter.conversations_>`__ option
-    for each Tweet in said timeline.
+    AAAAA AAAAAAA A AAAAAAAA AAAA AAAA AAAAAA AAAAAAA AA AAAAAAAAAAA AAA AAAA
+    AA AAAAAAA ``AAAAAAA-AA AAAAA://AAAAAAA.AAA/A/AAA/AAAAAA/<AAAAAAA>``
+    AAAA AAAAAAA `AAAAAAAAAAAAA <AAAAAAAAA.AAAAAAA.AAAAAAAAAAAAAA>`AA AAAAAA
+    AAA AAAA AAAAA AA AAAA AAAAAAAA.
 
-    Note: This requires at least 1 additional API call per initial Tweet.
+    AAAA: AAAA AAAAAAAA AA AAAAA A AAAAAAAAAA AAA AAAA AAA AAAAAAA AAAAA.
 
 
-extractor.twitter.include
+AAAAAAAAA.AAAAAAA.AAAAAAA
 -------------------------
-Type
-    * ``string``
-    * ``list`` of ``strings``
-Default
-    ``"timeline"``
-Example
-    * ``"avatar,background,media"``
-    * ``["avatar", "background", "media"]``
-Description
-    A (comma-separated) list of subcategories to include
-    when processing a user profile.
+AAAA
+    * ``AAAAAA``
+    * ``AAAA`` AA ``AAAAAAA``
+AAAAAAA
+    ``"AAAAAAAA"``
+AAAAAAA
+    * ``"AAAAAA,AAAAAAAAAA,AAAAA"``
+    * ``["AAAAAA", "AAAAAAAAAA", "AAAAA"]``
+AAAAAAAAAAA
+    A (AAAAA-AAAAAAAAA) AAAA AA AAAAAAAAAAAAA AA AAAAAAA
+    AAAA AAAAAAAAAA A AAAA AAAAAAA.
 
-    Possible values are
-    ``"avatar"``,
-    ``"background"``,
-    ``"timeline"``,
-    ``"tweets"``,
-    ``"media"``,
-    ``"replies"``,
-    ``"likes"``.
+    AAAAAAAA AAAAAA AAA
+    ``"AAAAAA"``,
+    ``"AAAAAAAAAA"``,
+    ``"AAAAAAAA"``,
+    ``"AAAAAA"``,
+    ``"AAAAA"``,
+    ``"AAAAAAA"``,
+    ``"AAAAA"``.
 
-    It is possible to use ``"all"`` instead of listing all values separately.
+    AA AA AAAAAAAA AA AAA ``"AAA"`` AAAAAAA AA AAAAAAA AAA AAAAAA AAAAAAAAAA.
 
 
-extractor.twitter.transform
+AAAAAAAAA.AAAAAAA.AAAAAAAAA
 ---------------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Transform Tweet and User metadata into a simpler, uniform format.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAAAAA AAAAA AAA AAAA AAAAAAAA AAAA A AAAAAAA, AAAAAAA AAAAAA.
 
 
-extractor.twitter.tweet-endpoint
+AAAAAAAAA.AAAAAAA.AAAAA-AAAAAAAA
 --------------------------------
-Type
-    ``string``
-Default
-    ``"auto"``
-Description
-    Selects the API endpoint used to retrieve single Tweets.
+AAAA
+    ``AAAAAA``
+AAAAAAA
+    ``"AAAA"``
+AAAAAAAAAAA
+    AAAAAAA AAA AAA AAAAAAAA AAAA AA AAAAAAAA AAAAAA AAAAAA.
 
-    * ``"restid"``: ``/TweetResultByRestId`` - accessible to guest users
-    * ``"detail"``: ``/TweetDetail`` - more stable
-    * ``"auto"``: ``"detail"`` when logged in, ``"restid"`` otherwise
+    * ``"AAAAAA"``: ``/AAAAAAAAAAAAAAAAAAA`` - AAAAAAAAAA AA AAAAA AAAAA
+    * ``"AAAAAA"``: ``/AAAAAAAAAAA`` - AAAA AAAAAA
+    * ``"AAAA"``: ``"AAAAAA"`` AAAA AAAAAA AA, ``"AAAAAA"`` AAAAAAAAA
 
 
-extractor.twitter.size
+AAAAAAAAA.AAAAAAA.AAAA
 ----------------------
-Type
-    ``list`` of ``strings``
-Default
-    ``["orig", "4096x4096", "large", "medium", "small"]``
-Description
-    The image version to download.
-    Any entries after the first one will be used for potential
-    `fallback <extractor.*.fallback_>`_ URLs.
+AAAA
+    ``AAAA`` AA ``AAAAAAA``
+AAAAAAA
+    ``["AAAA", "AAAAAAAAA", "AAAAA", "AAAAAA", "AAAAA"]``
+AAAAAAAAAAA
+    AAA AAAAA AAAAAAA AA AAAAAAAA.
+    AAA AAAAAAA AAAAA AAA AAAAA AAA AAAA AA AAAA AAA AAAAAAAAA
+    `AAAAAAAA <AAAAAAAAA.*.AAAAAAAAA>`A AAAA.
 
-    Known available sizes are
-    ``4096x4096``, ``orig``, ``large``, ``medium``, and ``small``.
+    AAAAA AAAAAAAAA AAAAA AAA
+    ``AAAAAAAAA``, ``AAAA``, ``AAAAA``, ``AAAAAA``, AAA ``AAAAA``.
 
 
-extractor.twitter.logout
+AAAAAAAAA.AAAAAAA.AAAAAA
 ------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Logout and retry as guest when access to another user's Tweets is blocked.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAAA AAA AAAAA AA AAAAA AAAA AAAAAA AA AAAAAAA AAAA'A AAAAAA AA AAAAAAA.
 
 
-extractor.twitter.pinned
+AAAAAAAAA.AAAAAAA.AAAAAA
 ------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Fetch media from pinned Tweets.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAA AAAAA AAAA AAAAAA AAAAAA.
 
 
-extractor.twitter.quoted
+AAAAAAAAA.AAAAAAA.AAAAAA
 ------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Fetch media from quoted Tweets.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAA AAAAA AAAA AAAAAA AAAAAA.
 
-    If this option is enabled, gallery-dl will try to fetch
-    a quoted (original) Tweet when it sees the Tweet which quotes it.
+    AA AAAA AAAAAA AA AAAAAAA, AAAAAAA-AA AAAA AAA AA AAAAA
+    A AAAAAA (AAAAAAAA) AAAAA AAAA AA AAAA AAA AAAAA AAAAA AAAAAA AA.
 
 
-extractor.twitter.ratelimit
+AAAAAAAAA.AAAAAAA.AAAAAAAAA
 ---------------------------
-Type
-    ``string``
-Default
-    ``"wait"``
-Description
-    Selects how to handle exceeding the API rate limit.
+AAAA
+    ``AAAAAA``
+AAAAAAA
+    ``"AAAA"``
+AAAAAAAAAAA
+    AAAAAAA AAA AA AAAAAA AAAAAAAAA AAA AAA AAAA AAAAA.
 
-    * ``"abort"``: Raise an error and stop extraction
-    * ``"wait"``: Wait until rate limit reset
+    * ``"AAAAA"``: AAAAA AA AAAAA AAA AAAA AAAAAAAAAA
+    * ``"AAAA"``: AAAA AAAAA AAAA AAAAA AAAAA
 
 
-extractor.twitter.replies
+AAAAAAAAA.AAAAAAA.AAAAAAA
 -------------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Fetch media from replies to other Tweets.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAA AAAAA AAAA AAAAAAA AA AAAAA AAAAAA.
 
-    If this value is ``"self"``, only consider replies where
-    reply and original Tweet are from the same user.
+    AA AAAA AAAAA AA ``"AAAA"``, AAAA AAAAAAAA AAAAAAA AAAAA
+    AAAAA AAA AAAAAAAA AAAAA AAA AAAA AAA AAAA AAAA.
 
-    Note: Twitter will automatically expand conversations if you
-    use the ``/with_replies`` timeline while logged in. For example,
-    media from Tweets which the user replied to will also be downloaded.
+    AAAA: AAAAAAA AAAA AAAAAAAAAAAAA AAAAAA AAAAAAAAAAAAA AA AAA
+    AAA AAA ``/AAAAAAAAAAAA`` AAAAAAAA AAAAA AAAAAA AA. AAA AAAAAAA,
+    AAAAA AAAA AAAAAA AAAAA AAA AAAA AAAAAAA AA AAAA AAAA AA AAAAAAAAAA.
 
-    It is possible to exclude unwanted Tweets using `image-filter
-    <extractor.*.image-filter_>`__.
+    AA AA AAAAAAAA AA AAAAAAA AAAAAAAA AAAAAA AAAAA `AAAAA-AAAAAA
+    <AAAAAAAAA.*.AAAAA-AAAAAAA>`AA.
 
 
-extractor.twitter.retweets
+AAAAAAAAA.AAAAAAA.AAAAAAAA
 --------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Fetch media from Retweets.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAA AAAAA AAAA AAAAAAAA.
 
-    If this value is ``"original"``, metadata for these files
-    will be taken from the original Tweets, not the Retweets.
+    AA AAAA AAAAA AA ``"AAAAAAAA"``, AAAAAAAA AAA AAAAA AAAAA
+    AAAA AA AAAAA AAAA AAA AAAAAAAA AAAAAA, AAA AAA AAAAAAAA.
 
 
-extractor.twitter.timeline.strategy
+AAAAAAAAA.AAAAAAA.AAAAAAAA.AAAAAAAA
 -----------------------------------
-Type
-    ``string``
-Default
-    ``"auto"``
-Description
-    Controls the strategy / tweet source used for timeline URLs
-    (``https://twitter.com/USER/timeline``).
+AAAA
+    ``AAAAAA``
+AAAAAAA
+    ``"AAAA"``
+AAAAAAAAAAA
+    AAAAAAAA AAA AAAAAAAA / AAAAA AAAAAA AAAA AAA AAAAAAAA AAAA
+    (``AAAAA://AAAAAAA.AAA/AAAA/AAAAAAAA``).
 
-    * ``"tweets"``: `/tweets <https://twitter.com/USER/tweets>`__ timeline + search
-    * ``"media"``: `/media <https://twitter.com/USER/media>`__ timeline + search
-    * ``"with_replies"``: `/with_replies <https://twitter.com/USER/with_replies>`__ timeline + search
-    * ``"auto"``: ``"tweets"`` or ``"media"``, depending on `retweets <extractor.twitter.retweets_>`__ and `text-tweets <extractor.twitter.text-tweets_>`__ settings
+    * ``"AAAAAA"``: `/AAAAAA <AAAAA://AAAAAAA.AAA/AAAA/AAAAAA>`AA AAAAAAAA + AAAAAA
+    * ``"AAAAA"``: `/AAAAA <AAAAA://AAAAAAA.AAA/AAAA/AAAAA>`AA AAAAAAAA + AAAAAA
+    * ``"AAAAAAAAAAAA"``: `/AAAAAAAAAAAA <AAAAA://AAAAAAA.AAA/AAAA/AAAAAAAAAAAA>`AA AAAAAAAA + AAAAAA
+    * ``"AAAA"``: ``"AAAAAA"`` AA ``"AAAAA"``, AAAAAAAAA AA `AAAAAAAA <AAAAAAAAA.AAAAAAA.AAAAAAAAA>`AA AAA `AAAA-AAAAAA <AAAAAAAAA.AAAAAAA.AAAA-AAAAAAA>`AA AAAAAAAA
 
 
-extractor.twitter.text-tweets
+AAAAAAAAA.AAAAAAA.AAAA-AAAAAA
 -----------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Also emit metadata for text-only Tweets without media content.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAA AAAA AAAAAAAA AAA AAAA-AAAA AAAAAA AAAAAAA AAAAA AAAAAAA.
 
-    This only has an effect with a ``metadata`` (or ``exec``) post processor
-    with `"event": "post" <metadata.event_>`_
-    and appropriate `filename <metadata.filename_>`_.
+    AAAA AAAA AAA AA AAAAAA AAAA A ``AAAAAAAA`` (AA ``AAAA``) AAAA AAAAAAAAA
+    AAAA `"AAAAA": "AAAA" <AAAAAAAA.AAAAAA>`A
+    AAA AAAAAAAAAAA `AAAAAAAA <AAAAAAAA.AAAAAAAAA>`A.
 
 
-extractor.twitter.twitpic
+AAAAAAAAA.AAAAAAA.AAAAAAA
 -------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Extract `TwitPic <https://twitpic.com/>`__ embeds.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAAAA `AAAAAAA <AAAAA://AAAAAAA.AAA/>`AA AAAAAA.
 
 
-extractor.twitter.unique
+AAAAAAAAA.AAAAAAA.AAAAAA
 ------------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Ignore previously seen Tweets.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAA AAAAAAAAAA AAAA AAAAAA.
 
 
-extractor.twitter.users
+AAAAAAAAA.AAAAAAA.AAAAA
 -----------------------
-Type
-    ``string``
-Default
-    ``"user"``
-Example
-    ``"https://twitter.com/search?q=from:{legacy[screen_name]}"``
-Description
-    | Format string for user URLs generated from
-      ``following`` and ``list-members`` queries,
-    | whose replacement field values come from Twitter ``user`` objects
-      (`Example <https://gist.githubusercontent.com/mikf/99d2719b3845023326c7a4b6fb88dd04/raw/275b4f0541a2c7dc0a86d3998f7d253e8f10a588/github.json>`_)
+AAAA
+    ``AAAAAA``
+AAAAAAA
+    ``"AAAA"``
+AAAAAAA
+    ``"AAAAA://AAAAAAA.AAA/AAAAAA?A=AAAA:{AAAAAA[AAAAAAAAAAA]}"``
+AAAAAAAAAAA
+    | AAAAAA AAAAAA AAA AAAA AAAA AAAAAAAAA AAAA
+      ``AAAAAAAAA`` AAA ``AAAA-AAAAAAA`` AAAAAAA,
+    | AAAAA AAAAAAAAAAA AAAAA AAAAAA AAAA AAAA AAAAAAA ``AAAA`` AAAAAAA
+      (`AAAAAAA <AAAAA://AAAA.AAAAAAAAAAAAAAAAA.AAA/AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAA.AAAA>`A)
 
-    Special values:
+    AAAAAAA AAAAAA:
 
-    * ``"user"``: ``https://twitter.com/i/user/{rest_id}``
-    * ``"timeline"``: ``https://twitter.com/id:{rest_id}/timeline``
-    * ``"tweets"``: ``https://twitter.com/id:{rest_id}/tweets``
-    * ``"media"``: ``https://twitter.com/id:{rest_id}/media``
+    * ``"AAAA"``: ``AAAAA://AAAAAAA.AAA/A/AAAA/{AAAAAAA}``
+    * ``"AAAAAAAA"``: ``AAAAA://AAAAAAA.AAA/AA:{AAAAAAA}/AAAAAAAA``
+    * ``"AAAAAA"``: ``AAAAA://AAAAAAA.AAA/AA:{AAAAAAA}/AAAAAA``
+    * ``"AAAAA"``: ``AAAAA://AAAAAAA.AAA/AA:{AAAAAAA}/AAAAA``
 
-    Note: To allow gallery-dl to follow custom URL formats, set the blacklist__
-    for ``twitter`` to a non-default value, e.g. an empty string ``""``.
+    AAAA: AA AAAAA AAAAAAA-AA AA AAAAAA AAAAAA AAA AAAAAAA, AAA AAA AAAAAAAAAAA
+    AAA ``AAAAAAA`` AA A AAA-AAAAAAA AAAAA, A.A. AA AAAAA AAAAAA ``""``.
 
-.. __: `extractor.*.blacklist & .whitelist`_
+.. AA: `AAAAAAAAA.*.AAAAAAAAA & .AAAAAAAAA`A
 
 
-extractor.twitter.videos
+AAAAAAAAA.AAAAAAA.AAAAAA
 ------------------------
-Type
-    * ``bool``
-    * ``string``
-Default
-    ``true``
-Description
-    Control video download behavior.
+AAAA
+    * ``AAAA``
+    * ``AAAAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAAA AAAAA AAAAAAAA AAAAAAAA.
 
-    * ``true``: Download videos
-    * ``"ytdl"``: Download videos using `youtube-dl`_
-    * ``false``: Skip video Tweets
+    * ``AAAA``: AAAAAAAA AAAAAA
+    * ``"AAAA"``: AAAAAAAA AAAAAA AAAAA `AAAAAAA-AA`A
+    * ``AAAAA``: AAAA AAAAA AAAAAA
 
 
-extractor.unsplash.format
+AAAAAAAAA.AAAAAAAA.AAAAAA
 -------------------------
-Type
-    ``string``
-Default
-    ``"raw"``
-Description
-    Name of the image format to download.
+AAAA
+    ``AAAAAA``
+AAAAAAA
+    ``"AAA"``
+AAAAAAAAAAA
+    AAAA AA AAA AAAAA AAAAAA AA AAAAAAAA.
 
-    Available formats are
-    ``"raw"``, ``"full"``, ``"regular"``, ``"small"``, and ``"thumb"``.
+    AAAAAAAAA AAAAAAA AAA
+    ``"AAA"``, ``"AAAA"``, ``"AAAAAAA"``, ``"AAAAA"``, AAA ``"AAAAA"``.
 
 
-extractor.vsco.videos
+AAAAAAAAA.AAAA.AAAAAA
 ---------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Download video files.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAAAA AAAAA AAAAA.
 
 
-extractor.wallhaven.api-key
+AAAAAAAAA.AAAAAAAAA.AAA-AAA
 ---------------------------
-Type
-    ``string``
-Default
-    ``null``
-Description
-    Your `Wallhaven API Key <https://wallhaven.cc/settings/account>`__,
-    to use your account's browsing settings and default filters when searching.
+AAAA
+    ``AAAAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAA `AAAAAAAAA AAA AAA <AAAAA://AAAAAAAAA.AA/AAAAAAAA/AAAAAAA>`AA,
+    AA AAA AAAA AAAAAAA'A AAAAAAAA AAAAAAAA AAA AAAAAAA AAAAAAA AAAA AAAAAAAAA.
 
-    See https://wallhaven.cc/help/api for more information.
+    AAA AAAAA://AAAAAAAAA.AA/AAAA/AAA AAA AAAA AAAAAAAAAAA.
 
 
-extractor.wallhaven.include
+AAAAAAAAA.AAAAAAAAA.AAAAAAA
 ---------------------------
-Type
-    * ``string``
-    * ``list`` of ``strings``
-Default
-    ``"uploads"``
-Example
-    * ``"uploads,collections"``
-    * ``["uploads", "collections"]``
-Description
-    A (comma-separated) list of subcategories to include
-    when processing a user profile.
+AAAA
+    * ``AAAAAA``
+    * ``AAAA`` AA ``AAAAAAA``
+AAAAAAA
+    ``"AAAAAAA"``
+AAAAAAA
+    * ``"AAAAAAA,AAAAAAAAAAA"``
+    * ``["AAAAAAA", "AAAAAAAAAAA"]``
+AAAAAAAAAAA
+    A (AAAAA-AAAAAAAAA) AAAA AA AAAAAAAAAAAAA AA AAAAAAA
+    AAAA AAAAAAAAAA A AAAA AAAAAAA.
 
-    Possible values are
-    ``"uploads"``, ``"collections"``.
+    AAAAAAAA AAAAAA AAA
+    ``"AAAAAAA"``, ``"AAAAAAAAAAA"``.
 
-    It is possible to use ``"all"`` instead of listing all values separately.
+    AA AA AAAAAAAA AA AAA ``"AAA"`` AAAAAAA AA AAAAAAA AAA AAAAAA AAAAAAAAAA.
 
 
-extractor.wallhaven.metadata
+AAAAAAAAA.AAAAAAAAA.AAAAAAAA
 ----------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Extract additional metadata (tags, uploader)
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAAAA AAAAAAAAAA AAAAAAAA (AAAA, AAAAAAAA)
 
-    Note: This requires 1 additional HTTP request per post.
+    AAAA: AAAA AAAAAAAA A AAAAAAAAAA AAAA AAAAAAA AAA AAAA.
 
 
-extractor.weasyl.api-key
+AAAAAAAAA.AAAAAA.AAA-AAA
 ------------------------
-Type
-    ``string``
-Default
-    ``null``
-Description
-    Your `Weasyl API Key <https://www.weasyl.com/control/apikeys>`__,
-    to use your account's browsing settings and filters.
+AAAA
+    ``AAAAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAA `AAAAAA AAA AAA <AAAAA://AAA.AAAAAA.AAA/AAAAAAA/AAAAAAA>`AA,
+    AA AAA AAAA AAAAAAA'A AAAAAAAA AAAAAAAA AAA AAAAAAA.
 
 
-extractor.weasyl.metadata
+AAAAAAAAA.AAAAAA.AAAAAAAA
 -------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    | Fetch extra submission metadata during gallery downloads.
-    | (``comments``, ``description``, ``favorites``, ``folder_name``,
-      ``tags``, ``views``)
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    | AAAAA AAAAA AAAAAAAAAA AAAAAAAA AAAAAA AAAAAAA AAAAAAAAA.
+    | (``AAAAAAAA``, ``AAAAAAAAAAA``, ``AAAAAAAAA``, ``AAAAAAAAAAA``,
+      ``AAAA``, ``AAAAA``)
 
-    Note: This requires 1 additional HTTP request per submission.
+    AAAA: AAAA AAAAAAAA A AAAAAAAAAA AAAA AAAAAAA AAA AAAAAAAAAA.
 
 
-extractor.weibo.include
+AAAAAAAAA.AAAAA.AAAAAAA
 -----------------------
-Type
-    * ``string``
-    * ``list`` of ``strings``
-Default
-    ``"feed"``
-Description
-    A (comma-separated) list of subcategories to include
-    when processing a user profile.
+AAAA
+    * ``AAAAAA``
+    * ``AAAA`` AA ``AAAAAAA``
+AAAAAAA
+    ``"AAAA"``
+AAAAAAAAAAA
+    A (AAAAA-AAAAAAAAA) AAAA AA AAAAAAAAAAAAA AA AAAAAAA
+    AAAA AAAAAAAAAA A AAAA AAAAAAA.
 
-    Possible values are
-    ``"home"``,
-    ``"feed"``,
-    ``"videos"``,
-    ``"newvideo"``,
-    ``"article"``,
-    ``"album"``.
+    AAAAAAAA AAAAAA AAA
+    ``"AAAA"``,
+    ``"AAAA"``,
+    ``"AAAAAA"``,
+    ``"AAAAAAAA"``,
+    ``"AAAAAAA"``,
+    ``"AAAAA"``.
 
-    It is possible to use ``"all"`` instead of listing all values separately.
+    AA AA AAAAAAAA AA AAA ``"AAA"`` AAAAAAA AA AAAAAAA AAA AAAAAA AAAAAAAAAA.
 
 
-extractor.weibo.livephoto
+AAAAAAAAA.AAAAA.AAAAAAAAA
 -------------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Download ``livephoto`` files.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAAAA ``AAAAAAAAA`` AAAAA.
 
 
-extractor.weibo.retweets
+AAAAAAAAA.AAAAA.AAAAAAAA
 ------------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Fetch media from retweeted posts.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAA AAAAA AAAA AAAAAAAAA AAAAA.
 
-    If this value is ``"original"``, metadata for these files
-    will be taken from the original posts, not the retweeted posts.
+    AA AAAA AAAAA AA ``"AAAAAAAA"``, AAAAAAAA AAA AAAAA AAAAA
+    AAAA AA AAAAA AAAA AAA AAAAAAAA AAAAA, AAA AAA AAAAAAAAA AAAAA.
 
 
-extractor.weibo.videos
+AAAAAAAAA.AAAAA.AAAAAA
 ----------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Download video files.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAAAA AAAAA AAAAA.
 
 
-extractor.ytdl.enabled
+AAAAAAAAA.AAAA.AAAAAAA
 ----------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Match **all** URLs, even ones without a ``ytdl:`` prefix.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAA **AAA** AAAA, AAAA AAAA AAAAAAA A ``AAAA:`` AAAAAA.
 
 
-extractor.ytdl.format
+AAAAAAAAA.AAAA.AAAAAA
 ---------------------
-Type
-    ``string``
-Default
-    youtube-dl's default, currently ``"bestvideo+bestaudio/best"``
-Description
-    Video `format selection
-    <https://github.com/ytdl-org/youtube-dl#format-selection>`__
-    directly passed to youtube-dl.
+AAAA
+    ``AAAAAA``
+AAAAAAA
+    AAAAAAA-AA'A AAAAAAA, AAAAAAAAA ``"AAAAAAAAA+AAAAAAAAA/AAAA"``
+AAAAAAAAAAA
+    AAAAA `AAAAAA AAAAAAAAA
+    <AAAAA://AAAAAA.AAA/AAAA-AAA/AAAAAAA-AA#AAAAAA-AAAAAAAAA>`AA
+    AAAAAAAA AAAAAA AA AAAAAAA-AA.
 
 
-extractor.ytdl.generic
+AAAAAAAAA.AAAA.AAAAAAA
 ----------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Controls the use of youtube-dl's generic extractor.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAAAAA AAA AAA AA AAAAAAA-AA'A AAAAAAA AAAAAAAAA.
 
-    Set this option to ``"force"`` for the same effect as youtube-dl's
-    ``--force-generic-extractor``.
+    AAA AAAA AAAAAA AA ``"AAAAA"`` AAA AAA AAAA AAAAAA AA AAAAAAA-AA'A
+    ``--AAAAA-AAAAAAA-AAAAAAAAA``.
 
 
-extractor.ytdl.logging
+AAAAAAAAA.AAAA.AAAAAAA
 ----------------------
-Type
-    ``bool``
-Default
-    ``true``
-Description
-    Route youtube-dl's output through gallery-dl's logging system.
-    Otherwise youtube-dl will write its output directly to stdout/stderr.
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAAA AAAAAAA-AA'A AAAAAA AAAAAAA AAAAAAA-AA'A AAAAAAA AAAAAA.
+    AAAAAAAAA AAAAAAA-AA AAAA AAAAA AAA AAAAAA AAAAAAAA AA AAAAAA/AAAAAA.
 
-    Note: Set ``quiet`` and ``no_warnings`` in
-    `extractor.ytdl.raw-options`_ to ``true`` to suppress all output.
+    AAAA: AAA ``AAAAA`` AAA ``AAAAAAAAAAA`` AA
+    `AAAAAAAAA.AAAA.AAA-AAAAAAA`A AA ``AAAA`` AA AAAAAAAA AAA AAAAAA.
 
 
-extractor.ytdl.module
+AAAAAAAAA.AAAA.AAAAAA
 ---------------------
-Type
-    ``string``
-Default
-    ``null``
-Description
-    Name of the youtube-dl Python module to import.
+AAAA
+    ``AAAAAA``
+AAAAAAA
+    ``AAAA``
+AAAAAAAAAAA
+    AAAA AA AAA AAAAAAA-AA AAAAAA AAAAAA AA AAAAAA.
 
-    Setting this to ``null`` will try to import ``"yt_dlp"``
-    followed by ``"youtube_dl"`` as fallback.
+    AAAAAAA AAAA AA ``AAAA`` AAAA AAA AA AAAAAA ``"AAAAAA"``
+    AAAAAAAA AA ``"AAAAAAAAAA"`` AA AAAAAAAA.
 
 
-extractor.ytdl.raw-options
+AAAAAAAAA.AAAA.AAA-AAAAAAA
 --------------------------
-Type
-    ``object`` (`name` -> `value`)
-Example
-    .. code:: json
+AAAA
+    ``AAAAAA`` (`AAAA` -> `AAAAA`)
+AAAAAAA
+    .. AAAA:: AAAA
 
         {
-            "quiet": true,
-            "writesubtitles": true,
-            "merge_output_format": "mkv"
+            "AAAAA": AAAA,
+            "AAAAAAAAAAAAAA": AAAA,
+            "AAAAAAAAAAAAAAAAAAA": "AAA"
         }
 
-Description
-    Additional options passed directly to the ``YoutubeDL`` constructor.
+AAAAAAAAAAA
+    AAAAAAAAAA AAAAAAA AAAAAA AAAAAAAA AA AAA ``AAAAAAAAA`` AAAAAAAAAAA.
 
-    All available options can be found in `youtube-dl's docstrings
-    <https://github.com/ytdl-org/youtube-dl/blob/master/youtube_dl/YoutubeDL.py#L138-L318>`__.
+    AAA AAAAAAAAA AAAAAAA AAA AA AAAAA AA `AAAAAAA-AA'A AAAAAAAAAA
+    <AAAAA://AAAAAA.AAA/AAAA-AAA/AAAAAAA-AA/AAAA/AAAAAA/AAAAAAAAAA/AAAAAAAAA.AA#AAAA-AAAA>`AA.
 
 
-extractor.ytdl.cmdline-args
+AAAAAAAAA.AAAA.AAAAAAA-AAAA
 ---------------------------
-Type
-    * ``string``
-    * ``list`` of ``strings``
-Example
-    * ``"--quiet --write-sub --merge-output-format mkv"``
-    * ``["--quiet", "--write-sub", "--merge-output-format", "mkv"]``
-Description
-    Additional options specified as youtube-dl command-line arguments.
+AAAA
+    * ``AAAAAA``
+    * ``AAAA`` AA ``AAAAAAA``
+AAAAAAA
+    * ``"--AAAAA --AAAAA-AAA --AAAAA-AAAAAA-AAAAAA AAA"``
+    * ``["--AAAAA", "--AAAAA-AAA", "--AAAAA-AAAAAA-AAAAAA", "AAA"]``
+AAAAAAAAAAA
+    AAAAAAAAAA AAAAAAA AAAAAAAAA AA AAAAAAA-AA AAAAAAA-AAAA AAAAAAAAA.
 
 
-extractor.ytdl.config-file
+AAAAAAAAA.AAAA.AAAAAA-AAAA
 --------------------------
-Type
-    |Path|_
-Example
-    ``"~/.config/youtube-dl/config"``
-Description
-    Location of a youtube-dl configuration file to load options from.
+AAAA
+    |AAAA|A
+AAAAAAA
+    ``"~/.AAAAAA/AAAAAAA-AA/AAAAAA"``
+AAAAAAAAAAA
+    AAAAAAAA AA A AAAAAAA-AA AAAAAAAAAAAAA AAAA AA AAAA AAAAAAA AAAA.
 
 
-extractor.zerochan.metadata
+AAAAAAAAA.AAAAAAAA.AAAAAAAA
 ---------------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Extract additional metadata (date, md5, tags, ...)
+AAAA
+    ``AAAA``
+AAAAAAA
+    ``AAAAA``
+AAAAAAAAAAA
+    AAAAAAA AAAAAAAAAA AAAAAAAA (AAAA, AAA, AAAA, ...)
 
-    Note: This requires 1-2 additional HTTP requests per post.
+    AAAA: AAAA AAAAAAAA A-A AAAAAAAAAA AAAA AAAAAAAA AAA AAAA.
