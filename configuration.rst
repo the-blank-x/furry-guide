@@ -27,33 +27,6 @@ Extractor-specific Options
 ==========================
 
 
-extractor.lolisafe.domain
--------------------------
-Type
-    ``string``
-Default
-    ``null``
-Description
-    Specifies the domain used by a ``lolisafe`` extractor
-    regardless of input URL.
-
-    Setting this option to ``"auto"``
-    uses the same domain as a given input URL.
-
-
-extractor.luscious.gif
-----------------------
-Type
-    ``bool``
-Default
-    ``false``
-Description
-    Format in which to download animated images.
-
-    Use ``true`` to download animated images as gifs and ``false``
-    to download as mp4 videos.
-
-
 extractor.mangadex.api-server
 -----------------------------
 Type
