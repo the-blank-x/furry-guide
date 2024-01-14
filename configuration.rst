@@ -14,15 +14,6 @@ This file lists all available configuration options and their descriptions.
 Contents
 ========
 
-1) `Extractor Options`_
-2) `Extractor-specific Options`_
-3) `Downloader Options`_
-4) `Output Options`_
-5) `Postprocessor Options`_
-6) `Miscellaneous Options`_
-7) `API Tokens & IDs`_
-
-
 Extractor-specific Options
 ==========================
 
